@@ -1,0 +1,121 @@
+body{
+  background-color: antiquewhite;
+}
+
+.li{
+  border: 1px solid brown;
+  width: 25em;
+  margin: 0.4em;
+  font-size: 1.5em;
+  padding-left: 0.5em;
+}
+
+.container{
+  display: flex;
+  position: fixed;
+  border: 5px double rgb(247, 241, 241);
+  background-color: rgb(91, 9, 9);
+  width: 95%;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.5em; 
+  margin: -0.4em;
+  margin-top: -0.7em;
+  /* flex-direction: column;  
+  justify-content: left; 
+  flex-direction: row;
+  */
+}
+
+.logo{
+  margin: 1em;
+}
+
+.logoC{
+  width: 50px;
+  border-radius: 20px;
+ 
+}
+
+.init{
+  margin-top: 2em;
+  border: 4px double brown;
+  width: 10em;
+  text-align: center;
+
+}
+
+.nombre{
+  color: aliceblue;
+  margin-top: 1em;
+  margin-left: 1em;
+}
+
+.nombre:hover{
+  color: yellow;
+}
+
+.img{
+  width: 20em;
+}
+
+pre{
+  font-size: 18px;
+}
+
+h1{
+  margin-top: 2em;
+}
+section{
+  padding: 5em;
+}
+.titulo{
+  color: red;
+  font-size: 1.5em;
+}
+
+.cita{
+  color: brown;
+  font-style: italic;
+  font-size: 1.5em;
+}
+.subtitulo{
+  color: darkred;
+}
+.lema{
+  color: blue;
+  font-size: 1.5em;
+}
+.a{
+  border: brown 2px solid;
+  padding: 0.5em;
+  margin-right: 1em;
+}
+.control{
+  border: brown 4px double;
+  padding: 1em;
+}
+.div{
+  display: contents;
+}
+
+.var{
+  background-color: peru;
+  color: white;
+}
+
+.select{
+  border: brown 1px solid;
+  font-size: 1.2em;
+  width: 90%;
+  margin: 0.4em;
+  padding: 0.3em;
+}
+
+summary{
+  color: brown;
+  font-style: italic;
+  font-weight: bold;
+}
+
+
