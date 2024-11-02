@@ -28,6 +28,21 @@
       background-color: #e3e4e5;
     }
 </style>
+<script>
+  const claveCorrecta = "2607";
+
+  do {
+    claveIngresada = prompt("Por favor, ingrese la clave para acceder:");
+    if (claveIngresada === null) {
+      alert("Acceso cancelado.");
+      break;
+    }
+  } while (claveIngresada !== claveCorrecta);
+
+  if (claveIngresada === claveCorrecta) {
+    document.getElementById("content").style.display = "block";
+  }
+</script>
 </head>
 <body>
   <p id="alInicio" class="principio"></p>
