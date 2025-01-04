@@ -169,3 +169,40 @@ footer {
   text-decoration: underline;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+.s{
+background-color: yellow;
+font-weight: bold;
+}
+.mg{
+background-color:  #C0C0C0;
+}
+.k{
+background-color: #e3e4e5;
+}
+.resalta{
+background-color: aliceblue;
+border: 1px solid brown;
+margin-top: 1em;
+padding: 0.5em;
+}
+
+.warning{
+color: brown;
+font-weight: bold;
+}
+
+.graf{
+  margin-top: 4em;
+}

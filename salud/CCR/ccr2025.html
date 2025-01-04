@@ -5,41 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../style.css">
   <title>CCR</title>
-  <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-    .s{
-      background-color: yellow;
-      font-weight: bold;
-    }
-    .mg{
-      background-color:  #C0C0C0;
-    }
-    .k{
-      background-color: #e3e4e5;
-    }
-    .resalta{
-      background-color: aliceblue;
-      border: 1px solid brown;
-      margin-top: 1em;
-      padding: 0.5em;
-    }
-
-    .warning{
-      color: brown;
-      font-weight: bold;
-    }
-</style>
 </head>
 <body>
   <p id="alInicio" class="principio"></p>
@@ -48,7 +13,7 @@
         <p class="logo"> CARLOS ISMAEL</p>
         <!-- ****************************************************** -->
         <a href="#alInicio"><img src="../../media/CERVERA.png" alt="" class="logoC"></a>
-        <a href="../index.html" class="nombre">INICIO </a>
+        <a href="../../index.html" class="nombre">INICIO </a>
       </div>
     </header> <br><br>
     <!-- ****************************************************************** -->
@@ -64,7 +29,7 @@
       <h1> MEDIDAS</h1>
       <div>
         <ol>
-          <li class="li"><a href="../index.html">2024 MEDIDAS</a></li>
+          <li class="li"><a href="./ccr2024.html">2024 MEDIDAS</a></li>
         </ol>
           <ol>
             
@@ -91,7 +56,7 @@
 
     <section id="1">
     <title>Tabla de Mediciones</title>
-<h2>Registro de Medidas Enero 2025</h2>
+<h2 class="cita">Registro de Medidas Enero 2025</h2>
 <table>
     <thead>
         <tr>
@@ -100,30 +65,30 @@
             <th>Presión Sis </th>
             <th>Presión Dias </th>
             <th>Pulso </th>
-            <th>Peso (kg)</th>
-            <th>Oxig (%)</th>
             <th>Temp (°C)</th>
+            <th>Oxig (%)</th>
+             <th>Peso (kg)</th>
             <th>OBSERVACIONES</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
+            <td>02</td> <!--Fecha   -->
+            <td>77</td> <!--Glucosa (mg/dL)  -->
+            <td>131</td> <!--Presión Sistólica (mmHg) -->
+            <td>86</td> <!--Presión Diastólica (mmHg)  -->
+            <td>59</td> <!-- Pulso (bpm)  -->
             <td></td> <!-- Temperatura (°C)  -->
             <td></td> <!--Oxigenación (%)  -->
             <td></td> <!-- Peso (kg)  -->
             <td class="warning"></td> <!--Observaciones  -->
         </tr>
         <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
+            <td>04</td> <!--Fecha   -->
+            <td>76</td> <!--Glucosa (mg/dL)  -->
+            <td>120</td> <!--Presión Sistólica (mmHg) -->
+            <td>78</td> <!--Presión Diastólica (mmHg)  -->
+            <td>68</td> <!-- Pulso (bpm)  -->
             <td></td> <!-- Temperatura (°C)  -->
             <td></td> <!--Oxigenación (%)  -->
             <td></td> <!-- Peso (kg)  -->
@@ -284,17 +249,74 @@
             <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
             <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
         </tr>
-       
-    
     </tbody>
-</table>
+</table> 
+<div class="graf">
+  <div class="card">
+      <h2 class="cita">Gráfica de Glucosa Enero</h2>
+    <canvas id="MedicionesChart01"></canvas>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('MedicionesChart01').getContext('2d');
+
+    const data01 = {
+      labels: ['02', '04', '07'], // Añade más fechas aquí
+      datasets: [{
+        label: 'Valores', //titulo
+        data: [77, 76, 148], // Añade más valores aquí
+        borderColor: '#8884d8',
+        backgroundColor: 'rgba(136, 132, 216, 0.2)',
+        tension: 0.3,
+        fill: true,
+      }]
+    };
+
+    const options = {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+        },
+        tooltip: {
+          enabled: true,
+        },
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Día de Enero',
+          },
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Glucosa (mg/dL)',
+          },
+          beginAtZero: false,
+          min:60,
+        },
+      },
+    };
+
+    const ctx01 = document.getElementById('MedicionesChart01').getContext('2d');
+    new Chart(ctx01, {
+      type: 'line',
+      data: data01,
+      options: options,
+    });
+  </script>
+
+</div>
     </section>
   
     <!-- ****************************************************************** -->
     <section id="2">
       <title>Tabla de Mediciones</title>
-  <h2>Registro de Medidas Febrero 2025</h2>
+  <h2 class="cita">Registro de Medidas Febrero 2025</h2>
   <table>
       <thead>
           <tr>
@@ -303,9 +325,9 @@
               <th>Presión Sis </th>
               <th>Presión Dias </th>
               <th>Pulso </th>
-              <th>Peso (kg)</th>
-              <th>Oxig (%)</th>
               <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
               <th>OBSERVACIONES</th>
           </tr>
       </thead>
@@ -491,7 +513,65 @@
       
       </tbody>
   </table>
+  <div class="graf">
+    <div class="card">
+        <h2 class="cita">Gráfica de Glucosa Febrero </h2>
+      <canvas id="MedicionesChart02"></canvas>
+    </div>
   
+    <script>
+      const ctxF = document.getElementById('MedicionesChart02').getContext('2d');
+  
+      const data02 = {
+        labels: ['02', '04', '07'], // Añade más fechas aquí
+        datasets: [{
+          label: 'Mediciones',
+          data: [77, 76, 100], // Añade más valores aquí
+          borderColor: '#8884d8',
+          backgroundColor: 'rgba(136, 132, 216, 0.2)',
+          tension: 0.3,
+          fill: true,
+        }]
+      };
+  
+      const options02 = {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+          },
+          tooltip: {
+            enabled: true,
+          },
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Día  de  Febrero',
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Glucosa (mg/dL)',
+            },
+            beginAtZero: false,
+            min:60,
+          },
+        },
+      };
+  
+      const ctx02 = document.getElementById('MedicionesChart02').getContext('2d');
+      new Chart(ctx02, {
+        type: 'line',
+        data: data02,
+        options: options02,
+      });
+    </script>
+  
+  </div>
       </section>
     <!-- ****************************************************************** -->
     <section id="3">
@@ -505,9 +585,9 @@
               <th>Presión Sis </th>
               <th>Presión Dias </th>
               <th>Pulso </th>
-              <th>Peso (kg)</th>
-              <th>Oxig (%)</th>
               <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
               <th>OBSERVACIONES</th>
           </tr>
       </thead>
@@ -693,12 +773,70 @@
       
       </tbody>
   </table>
+  <div class="graf">
+    <div class="card">
+        <h2 class="cita">Gráfica de Glucosa Marzo </h2>
+      <canvas id="MedicionesChart03"></canvas>
+    </div>
   
+    <script>
+      const ctxM = document.getElementById('MedicionesChart03').getContext('2d');
+  
+      const data03 = {
+        labels: ['02', '04', '07'], // Añade más fechas aquí
+        datasets: [{
+          label: 'Mediciones',
+          data: [67, 76, 80], // Añade más valores aquí
+          borderColor: '#8884d8',
+          backgroundColor: 'rgba(136, 132, 216, 0.2)',
+          tension: 0.3,
+          fill: true,
+        }]
+      };
+  
+      const options03 = {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+          },
+          tooltip: {
+            enabled: true,
+          },
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Día  de  Marzo',
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Glucosa (mg/dL)',
+            },
+            beginAtZero: false,
+            min:60,
+          },
+        },
+      };
+  
+      const ctx03 = document.getElementById('MedicionesChart03').getContext('2d');
+      new Chart(ctx03, {
+        type: 'line',
+        data: data03,
+        options: options03,
+      });
+    </script>
+  
+  </div>
       </section>
     <!-- ****************************************************************** -->
     <section id="4">
       <title>Tabla de Mediciones</title>
-  <h2>Registro de Medidas Abril 2025</h2>
+  <h2 class="cita">Registro de Medidas Abril 2025</h2>
   <table>
       <thead>
           <tr>
@@ -707,9 +845,9 @@
               <th>Presión Sis </th>
               <th>Presión Dias </th>
               <th>Pulso </th>
-              <th>Peso (kg)</th>
-              <th>Oxig (%)</th>
               <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
               <th>OBSERVACIONES</th>
           </tr>
       </thead>
@@ -891,7 +1029,67 @@
               <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
               <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
           </tr>
-         
+          </tbody>
+        </table>
+          <div class="graf">
+            <div class="card">
+                <h2 class="cita">Gráfica de Glucosa Abril </h2>
+              <canvas id="MedicionesChart04"></canvas>
+            </div>
+          
+            <script>
+              const ctxAbril = document.getElementById('MedicionesChart04').getContext('2d');
+          
+              const data04 = {
+                labels: ['02', '04', '07'], // Añade más fechas aquí
+                datasets: [{
+                  label: 'Mediciones',
+                  data: [70, 80, 90], // Añade más valores aquí
+                  borderColor: '#8884d8',
+                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
+                  tension: 0.3,
+                  fill: true,
+                }]
+              };
+          
+              const options04 = {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    display: true,
+                    position: 'top',
+                  },
+                  tooltip: {
+                    enabled: true,
+                  },
+                },
+                scales: {
+                  x: {
+                    title: {
+                      display: true,
+                      text: 'Día  de  Febrero',
+                    },
+                  },
+                  y: {
+                    title: {
+                      display: true,
+                      text: 'Glucosa (mg/dL)',
+                    },
+                    beginAtZero: false,
+                    min:60,
+                  },
+                },
+              };
+          
+              const ctx04 = document.getElementById('MedicionesChart04').getContext('2d');
+              new Chart(ctx04, {
+                type: 'line',
+                data: data04,
+                options: options04,
+              });
+            </script>
+          
+          </div>   
       
       </tbody>
   </table>
@@ -900,7 +1098,7 @@
     <!-- ****************************************************************** -->    
       <section id="5">
         <title>Tabla de Mediciones</title>
-    <h2>Registro de Medidas Mayo 2025</h2>
+    <h2 class="cita">Registro de Medidas Mayo 2025</h2>
     <table>
         <thead>
             <tr>
@@ -909,9 +1107,9 @@
                 <th>Presión Sis </th>
                 <th>Presión Dias </th>
                 <th>Pulso </th>
-                <th>Peso (kg)</th>
-                <th>Oxig (%)</th>
                 <th>Temp (°C)</th>
+                <th>Oxig (%)</th>
+                 <th>Peso (kg)</th>
                 <th>OBSERVACIONES</th>
             </tr>
         </thead>
@@ -1111,9 +1309,9 @@
                   <th>Presión Sis </th>
                   <th>Presión Dias </th>
                   <th>Pulso </th>
-                  <th>Peso (kg)</th>
-                  <th>Oxig (%)</th>
                   <th>Temp (°C)</th>
+                  <th>Oxig (%)</th>
+                   <th>Peso (kg)</th>
                   <th>OBSERVACIONES</th>
               </tr>
           </thead>
@@ -1313,9 +1511,9 @@
                     <th>Presión Sis </th>
                     <th>Presión Dias </th>
                     <th>Pulso </th>
-                    <th>Peso (kg)</th>
-                    <th>Oxig (%)</th>
                     <th>Temp (°C)</th>
+                    <th>Oxig (%)</th>
+                     <th>Peso (kg)</th>
                     <th>OBSERVACIONES</th>
                 </tr>
             </thead>
@@ -1515,9 +1713,9 @@
                       <th>Presión Sis </th>
                       <th>Presión Dias </th>
                       <th>Pulso </th>
-                      <th>Peso (kg)</th>
-                      <th>Oxig (%)</th>
                       <th>Temp (°C)</th>
+                      <th>Oxig (%)</th>
+                       <th>Peso (kg)</th>
                       <th>OBSERVACIONES</th>
                   </tr>
               </thead>
@@ -1717,9 +1915,9 @@
                         <th>Presión Sis </th>
                         <th>Presión Dias </th>
                         <th>Pulso </th>
-                        <th>Peso (kg)</th>
-                        <th>Oxig (%)</th>
                         <th>Temp (°C)</th>
+                        <th>Oxig (%)</th>
+                         <th>Peso (kg)</th>
                         <th>OBSERVACIONES</th>
                     </tr>
                 </thead>
@@ -1919,9 +2117,9 @@
                           <th>Presión Sis </th>
                           <th>Presión Dias </th>
                           <th>Pulso </th>
-                          <th>Peso (kg)</th>
-                          <th>Oxig (%)</th>
                           <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
                           <th>OBSERVACIONES</th>
                       </tr>
                   </thead>
@@ -2112,7 +2310,7 @@
   <!-- ****************************************************************** -->
                 <section id="11">
                   <title>Tabla de Mediciones</title>
-              <h2>Registro de Medidas Noviembre 2025</h2>
+            <h2 class="cita">Registro de Medidas Noviembre 2025</h2>
               <table>
                   <thead>
                       <tr>
@@ -2121,9 +2319,9 @@
                           <th>Presión Sis </th>
                           <th>Presión Dias </th>
                           <th>Pulso </th>
-                          <th>Peso (kg)</th>
-                          <th>Oxig (%)</th>
                           <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
                           <th>OBSERVACIONES</th>
                       </tr>
                   </thead>
@@ -2323,9 +2521,9 @@
                           <th>Presión Sis </th>
                           <th>Presión Dias </th>
                           <th>Pulso </th>
-                          <th>Peso (kg)</th>
-                          <th>Oxig (%)</th>
                           <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
                           <th>OBSERVACIONES</th>
                       </tr>
                   </thead>

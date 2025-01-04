@@ -4,92 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
-  <title>SALUD</title>
+  <title>Salud</title>
   <style>
-    .imgLocal{
-      width: 97%;
-      border: 8px brown double;
+    .imgLocal, .img {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      display: block;
+      border: 5px double brown;
       border-radius: 1em;
     }
 
-    .img{
-      width: 45%;
-      height: 20%;
-      border: 4px brown double;
-      border-radius: 1em;
-      margin: 1em;
+    .img {
+      max-width: 300px;
     }
-    .footer-bottom a{
-      text-decoration: none;
+
+    .uno {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .img {
+        max-width: 100%;
+        margin: 0.5em auto;
+      }
     }
   </style>
 </head>
-<!-- <script>
-  let numero;
-do {
-  numero = prompt("Ingresa la clave ");
-  numero = Number(numero);
-  if (numero !== 2607) {
-    alert("Número incorrecto. Intenta de nuevo.");
-  }
-} while (numero !== 2607);
-alert("¡Correcto! Ingresaste el número 2607.");
-</script> -->
 <body>
   <p id="alInicio" class="principio"></p>
-    <header>
-      <div class="container">
-        <p class="logo">CONTROL DE SALUD</p>
-        <!-- ****************************************************** -->
-        <a href="#alInicio"><img src="./media/CERVERA.png" alt="" class="logoC"></a>
-        <a href="./salud/index.html" class="nombre">CCR </a>
-      </div>
-    </header> <br><br>
-    <!-- ****************************************************************** -->
-    <h1 class="init">FAMILIA </h1>
-     <h3 class="cita">"No aceptes como Verdad lo que no proviene del Amor, <br> ni aceptes como Amor lo que no proviene de la Verdad"
-          <br>EDITH STEIN</h3>
+  <header>
+    <div class="container">
+      <p class="logo"> Control de Salud</p>
+      <!-- ****************************************************** -->
+      <a href="#alInicio"><img src="../../media/CERVERA.png" alt="" class="logoC"></a>
+      <a href="./salud/CCR/ccr2025.html" class="nombre">CCR  </a>
+    </div>
+  </header> <br><br>
+  <!-- ****************************************************************** -->
 
- 
-    <!-- ****************************************************************** -->
+  <h1 class="init">Familia</h1>
+  <h3 class="cita">
+    "No aceptes como Verdad lo que no proviene del Amor,<br> 
+    ni aceptes como Amor lo que no proviene de la Verdad" <br>
+    Edith Stein
+  </h3>
 
-    <section id="00">
-     <div>
-      <img src="./media/FAMILIA1.jpg" alt="2024" class="imgLocal">
-     </div>
-   
+  <section id="00">
+    <img src="./media/FAMILIA1.jpg" alt="Familia 2024" class="imgLocal">
+  </section>
 
-      </div>
-    </section>
-    <!-- ****************************************************************** -->
-    <section id="01">
-   <div class="uno">
-    <img src="./media/2024.jpg" alt="" class="img">
-    <img src="./media/FAMILIA.jpg" alt="" class="img">
-    <img src="./media/25 AÑOS.jpeg" alt="" class="img">
-    
-   </div>
+  <section id="01">
+    <div class="uno">
+      <img src="./media/2024.jpg" alt="Imagen 2024" class="img">
+      <img src="./media/FAMILIA.jpg" alt="Foto Familiar" class="img">
+      <img src="./media/25 AÑOS.jpeg" alt="25 Años" class="img">
+    </div>
+  </section>
 
-
-    </section>
-    <!-- ****************************************************************** -->
-    <footer>
-      <div class="footer-content">
-        <h3> Web Salud</h3>
-        <p>Gracias por visitarnos. Espero nos envies tus fotos y sugerencias</p>
-        <ul class="socials">
-          <li><a href="#"><i class="fab fa-facebook-f"></i> IR AL INICIO</a></li>
-    
-        </ul>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2024 NOVIEMBRE | Diseñado por <a href="./salud/CMN/MedidasCarlos.html" >CARLOS C</a></p>
-      </div>
-    </footer>
-    
-
-
-
-
+  <footer>
+    <div class="footer-content">
+      <h3>Web Salud</h3>
+      <p>Gracias por visitarnos. Espero nos envíes tus fotos y sugerencias</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Noviembre | Diseñado por <a href="./salud/CMN/cmn2025.html">Carlos C</a></p>
+    </div>
+  </footer>
 </body>
 </html>
