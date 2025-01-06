@@ -4,44 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../style.css">
-  <title>SALUD</title>
-  <style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
+  <title>CMN2025</title>
+  <script>
+    const claveCorrecta = "2607";
+  
+    do {
+      claveIngresada = prompt("Por favor, ingrese la clave para acceder:");
+      if (claveIngresada === null) {
+        alert("Acceso cancelado.");
+        break;
+      }
+    } while (claveIngresada !== claveCorrecta);
+  
+    if (claveIngresada === claveCorrecta) {
+      document.getElementById("content").style.display = "block";
     }
-    th, td {
-        border: 1px solid black;
-        padding: 8px;
-        text-align: center;
-    }
-    th {
-        background-color: #f2f2f2;
-    }
-    .s{
-      background-color: yellow;
-    }
-    .mg{
-      background-color:  #C0C0C0;
-    }
-    .k{
-      background-color: #e3e4e5;
-    }
-</style>
-
+  </script>
 </head>
 <body>
   <p id="alInicio" class="principio"></p>
     <header>
       <div class="container">
-        <p class="logo"> SALUD</p>
+        <p class="logo"> CMN2025</p>
         <!-- ****************************************************** -->
         <a href="#alInicio"><img src="../../media/CERVERA.png" alt="" class="logoC"></a>
-        <a href="../index.html" class="nombre">INICIO </a>
+        <a href="../../index.html" class="nombre">INICIO </a>
       </div>
     </header> <br><br>
     <!-- ****************************************************************** -->
-    <h1 class="init">CARLOS MARTIN</h1>
+    <h1 class="init">2025</h1>
      <h3 class="cita">"No aceptes como Verdad lo que no proviene del Amor, <br> ni aceptes como Amor lo que no proviene de la Verdad"
           <br>EDITH STEIN</h3>
 
@@ -53,150 +44,34 @@
       <h1> MEDIDAS</h1>
       <div>
         <ol>
-          <li class="li"><a href="#1">Enero</a></li>
-          <li class="li"><a href="#2">Febrero</a></li>
+          <li class="li"><a href="./cmn2024.html">2024 MEDIDAS</a></li>
+        </ol>
+          <ol>
+            
+          <h3 class="cita">Medidas 2025</h3>
+          <li class="li"><a href="#1"> Enero</a></li>
+          <li class="li"><a href="#2"> Febrero</a></li>
+          <li class="li"><a href="#3"> Marzo</a></li>
+          <li class="li"><a href="#4"> Abril</a></li>
+          <li class="li"><a href="#5"> Mayo</a></li>
+          <li class="li"><a href="#6"> Junio</a></li>
+          <li class="li"><a href="#7"> Julio</a></li>
+          <li class="li"><a href="#8"> Agosto</a></li>
+          <li class="li"><a href="#9"> Septiembre</a></li>
+          <li class="li"><a href="#10"> Octubre</a></li>
+          <li class="li"><a href="#11"> Noviembre</a></li>
+          <li class="li"><a href="#12"> Diciembre</a></li>
 
         </ol>
       </section>
- <section class="control">
-    <h2>MEDICIONES & VARIABLES</h2>
-    <ol>     
-       <li class="li"><a href="../glucosa.html" class="">GLUCOSA</a></li>
-      <li class="li"><a href="../PresionSis.html" class="">PRESIÓN ARTERIAL</a></li>
-      <li class="li"><a href="" class="">PULSO</a></li>
-      <li class="li"><a href="" class="">TEMPERATURA</a></li>
-      <li class="li"><a href="" class="">OXIGENACIÓN</a></li>
-      <li class="li"><a href="../peso.html" class="">PESO</a></li>
-      <li class="li" ><a href="../Ejercicios.html" class="">EJERCICIOS</a></li>
-      <li class="li" ><a href="../Alimentos.html" class="">ALIMENTACIÓN</a></li>
-      </ol>
 
- </section> <br>
- <section class="control">
-  <h2>PROBLEMAS </h2>
- 
-  <li class="li"><a href="../circulación.html">CIRCULACIÓN</a></li>
-  <li class="li"><a href=""></a></li>
-  <li class="li"><a href=""></a></li>
- 
- </section>
 
      <!-- ****************************************************************** -->
-     <section id="1">
-      <h2>Enero</h2>
-      <table>
-          <thead>
-              <tr>
-                  <th>Fecha</th>
-                  <th>Glucosa </th>
-                  <th>Presión Sis </th>
-                  <th>Presión Dias </th>
-                  <th>Pulso </th>
-                  <th>Temp (°C)</th>
-                  <th>Oxig (%)</th>
-                  <th>Peso (kg)</th>
-                  <th>OBSERVACIONES</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr class="k">
-                  <td>31/12</td> <!--Fecha   -->
-                  <td>70-100</td> <!--Glucosa (mg/dL)  -->
-                  <td>120</td> <!--Presión Sistólica (mmHg) -->
-                  <td>80</td> <!--Presión Diastólica (mmHg)  -->
-                  <td>50-60</td> <!-- Pulso (bpm)  -->
-                  <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-                  <td>95-100</td> <!--Oxigenación (%)  -->
-                  <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-                  <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-              </tr>
-             
-          
-          </tbody>
-      </table>
-    </section>
-    
-    <!-- ****************************************************************** -->
 
-    <section id="2">
-<h2>Febrero</h2>
+
+    <section id="1">
+    <title>Tabla de Mediciones</title>
+<h2 class="cita">Registro de Medidas Enero 2025</h2>
 <table>
     <thead>
         <tr>
@@ -207,222 +82,1240 @@
             <th>Pulso </th>
             <th>Temp (°C)</th>
             <th>Oxig (%)</th>
-            <th>Peso (kg)</th>
+             <th>Peso (kg)</th>
             <th>OBSERVACIONES</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
+            <td>06</td> <!--Fecha   -->
+            <td>89</td> <!--Glucosa (mg/dL)  -->
+            <td>119</td> <!--Presión Sistólica (mmHg) -->
+            <td>73</td> <!--Presión Diastólica (mmHg)  -->
+            <td>87</td> <!-- Pulso (bpm)  -->
             <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
+            <td>98</td> <!--Oxigenación (%)  -->
+            <td>64</td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
         </tr>
         <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr>
-            <td></td> <!--Fecha   -->
-            <td></td> <!--Glucosa (mg/dL)  -->
-            <td></td> <!--Presión Sistólica (mmHg) -->
-            <td></td> <!--Presión Diastólica (mmHg)  -->
-            <td></td> <!-- Pulso (bpm)  -->
-            <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
-            <td></td> <!--Observaciones  -->
-        </tr>
-        <tr class="k">
-            <td>31/12</td> <!--Fecha   -->
-            <td>70-100</td> <!--Glucosa (mg/dL)  -->
+            <td>04</td> <!--Fecha   -->
+            <td>76</td> <!--Glucosa (mg/dL)  -->
             <td>120</td> <!--Presión Sistólica (mmHg) -->
-            <td>80</td> <!--Presión Diastólica (mmHg)  -->
+            <td>78</td> <!--Presión Diastólica (mmHg)  -->
+            <td>68</td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+        <tr>
+            <td></td> <!--Fecha   -->
+            <td></td> <!--Glucosa (mg/dL)  -->
+            <td></td> <!--Presión Sistólica (mmHg) -->
+            <td></td> <!--Presión Diastólica (mmHg)  -->
+            <td></td> <!-- Pulso (bpm)  -->
+            <td></td> <!-- Temperatura (°C)  -->
+            <td></td> <!--Oxigenación (%)  -->
+            <td></td> <!-- Peso (kg)  -->
+            <td class="warning"></td> <!--Observaciones  -->
+        </tr>
+     
+        <tr class="s">
+            <td></td> <!--Fecha   -->
+            <td>70-100</td> <!--Glucosa (mg/dL)  -->
+            <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+            <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
             <td>50-60</td> <!-- Pulso (bpm)  -->
             <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
             <td>95-100</td> <!--Oxigenación (%)  -->
             <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
             <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
         </tr>
-       
-    
     </tbody>
-</table>
+</table> 
+<div class="graf">
+  <div class="card">
+      <h2 class="cita">Gráfica de Glucosa Enero</h2>
+    <canvas id="MedicionesChart01"></canvas>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    const ctx = document.getElementById('MedicionesChart01').getContext('2d');
+
+    const data01 = {
+      labels: ['02', '04', '07'], // Añade más fechas aquí
+      datasets: [{
+        label: 'Valores', //titulo
+        data: [89, 76, 148], // Añade más valores aquí
+        borderColor: '#8884d8',
+        backgroundColor: 'rgba(136, 132, 216, 0.2)',
+        tension: 0.3,
+        fill: true,
+      }]
+    };
+
+    const options = {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top',
+        },
+        tooltip: {
+          enabled: true,
+        },
+      },
+      scales: {
+        x: {
+          title: {
+            display: true,
+            text: 'Día de Enero',
+          },
+        },
+        y: {
+          title: {
+            display: true,
+            text: 'Glucosa (mg/dL)',
+          },
+          beginAtZero: false,
+          min:60,
+        },
+      },
+    };
+
+    const ctx01 = document.getElementById('MedicionesChart01').getContext('2d');
+    new Chart(ctx01, {
+      type: 'line',
+      data: data01,
+      options: options,
+    });
+  </script>
+
+</div>
     </section>
   
     <!-- ****************************************************************** -->
+    <section id="2">
+      <title>Tabla de Mediciones</title>
+  <h2 class="cita">Registro de Medidas Febrero 2025</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Fecha</th>
+              <th>Glucosa </th>
+              <th>Presión Sis </th>
+              <th>Presión Dias </th>
+              <th>Pulso </th>
+              <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
+              <th>OBSERVACIONES</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+       
+          <tr class="s">
+              <td></td> <!--Fecha   -->
+              <td>70-100</td> <!--Glucosa (mg/dL)  -->
+              <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+              <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+              <td>50-60</td> <!-- Pulso (bpm)  -->
+              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+              <td>95-100</td> <!--Oxigenación (%)  -->
+              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+          </tr>
+         
+      
+      </tbody>
+  </table>
+  <div class="graf">
+    <div class="card">
+        <h2 class="cita">Gráfica de Glucosa Febrero </h2>
+      <canvas id="MedicionesChart02"></canvas>
+    </div>
+  
+    <script>
+      const ctxF = document.getElementById('MedicionesChart02').getContext('2d');
+  
+      const data02 = {
+        labels: ['02', '04', '07'], // Añade más fechas aquí
+        datasets: [{
+          label: 'Mediciones',
+          data: [77, 76, 100], // Añade más valores aquí
+          borderColor: '#8884d8',
+          backgroundColor: 'rgba(136, 132, 216, 0.2)',
+          tension: 0.3,
+          fill: true,
+        }]
+      };
+  
+      const options02 = {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+          },
+          tooltip: {
+            enabled: true,
+          },
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Día  de  Febrero',
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Glucosa (mg/dL)',
+            },
+            beginAtZero: false,
+            min:60,
+          },
+        },
+      };
+  
+      const ctx02 = document.getElementById('MedicionesChart02').getContext('2d');
+      new Chart(ctx02, {
+        type: 'line',
+        data: data02,
+        options: options02,
+      });
+    </script>
+  
+  </div>
+      </section>
+    <!-- ****************************************************************** -->
     <section id="3">
-      <h2>Marzo</h2>
-      <table>
-          <thead>
-              <tr>
-                  <th>Fecha</th>
-                  <th>Glucosa </th>
-                  <th>Presión Sis </th>
-                  <th>Presión Dias </th>
-                  <th>Pulso </th>
-                  <th>Temp (°C)</th>
-                  <th>Oxig (%)</th>
-                  <th>Peso (kg)</th>
-                  <th>OBSERVACIONES</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr>
-                  <td></td> <!--Fecha   -->
-                  <td></td> <!--Glucosa (mg/dL)  -->
-                  <td></td> <!--Presión Sistólica (mmHg) -->
-                  <td></td> <!--Presión Diastólica (mmHg)  -->
-                  <td></td> <!-- Pulso (bpm)  -->
-                  <td></td> <!-- Temperatura (°C)  -->
-                  <td></td> <!--Oxigenación (%)  -->
-                  <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
-              </tr>
-              <tr class="k">
-                  <td>31/12</td> <!--Fecha   -->
-                  <td>70-100</td> <!--Glucosa (mg/dL)  -->
-                  <td>120</td> <!--Presión Sistólica (mmHg) -->
-                  <td>80</td> <!--Presión Diastólica (mmHg)  -->
-                  <td>50-60</td> <!-- Pulso (bpm)  -->
-                  <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-                  <td>95-100</td> <!--Oxigenación (%)  -->
-                  <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-                  <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-              </tr>
-             
-          
-          </tbody>
-      </table>
-
-
-    </section>
+      <title>Tabla de Mediciones</title>
+  <h2>Registro de Medidas Marzo 2025</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Fecha</th>
+              <th>Glucosa </th>
+              <th>Presión Sis </th>
+              <th>Presión Dias </th>
+              <th>Pulso </th>
+              <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
+              <th>OBSERVACIONES</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+       
+          <tr class="s">
+              <td></td> <!--Fecha   -->
+              <td>70-100</td> <!--Glucosa (mg/dL)  -->
+              <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+              <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+              <td>50-60</td> <!-- Pulso (bpm)  -->
+              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+              <td>95-100</td> <!--Oxigenación (%)  -->
+              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+          </tr>
+         
+      
+      </tbody>
+  </table>
+  <div class="graf">
+    <div class="card">
+        <h2 class="cita">Gráfica de Glucosa Marzo </h2>
+      <canvas id="MedicionesChart03"></canvas>
+    </div>
+  
+    <script>
+      const ctxM = document.getElementById('MedicionesChart03').getContext('2d');
+  
+      const data03 = {
+        labels: ['02', '04', '07'], // Añade más fechas aquí
+        datasets: [{
+          label: 'Mediciones',
+          data: [67, 76, 80], // Añade más valores aquí
+          borderColor: '#8884d8',
+          backgroundColor: 'rgba(136, 132, 216, 0.2)',
+          tension: 0.3,
+          fill: true,
+        }]
+      };
+  
+      const options03 = {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+          },
+          tooltip: {
+            enabled: true,
+          },
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Día  de  Marzo',
+            },
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Glucosa (mg/dL)',
+            },
+            beginAtZero: false,
+            min:60,
+          },
+        },
+      };
+  
+      const ctx03 = document.getElementById('MedicionesChart03').getContext('2d');
+      new Chart(ctx03, {
+        type: 'line',
+        data: data03,
+        options: options03,
+      });
+    </script>
+  
+  </div>
+      </section>
     <!-- ****************************************************************** -->
     <section id="4">
-      <h2>Abril</h2>
+      <title>Tabla de Mediciones</title>
+  <h2 class="cita">Registro de Medidas Abril 2025</h2>
+  <table>
+      <thead>
+          <tr>
+              <th>Fecha</th>
+              <th>Glucosa </th>
+              <th>Presión Sis </th>
+              <th>Presión Dias </th>
+              <th>Pulso </th>
+              <th>Temp (°C)</th>
+              <th>Oxig (%)</th>
+               <th>Peso (kg)</th>
+              <th>OBSERVACIONES</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+          <tr>
+              <td></td> <!--Fecha   -->
+              <td></td> <!--Glucosa (mg/dL)  -->
+              <td></td> <!--Presión Sistólica (mmHg) -->
+              <td></td> <!--Presión Diastólica (mmHg)  -->
+              <td></td> <!-- Pulso (bpm)  -->
+              <td></td> <!-- Temperatura (°C)  -->
+              <td></td> <!--Oxigenación (%)  -->
+              <td></td> <!-- Peso (kg)  -->
+              <td class="warning"></td> <!--Observaciones  -->
+          </tr>
+       
+          <tr class="s">
+              <td></td> <!--Fecha   -->
+              <td>70-100</td> <!--Glucosa (mg/dL)  -->
+              <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+              <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+              <td>50-60</td> <!-- Pulso (bpm)  -->
+              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+              <td>95-100</td> <!--Oxigenación (%)  -->
+              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+          </tr>
+          </tbody>
+        </table>
+          <div class="graf">
+            <div class="card">
+                <h2 class="cita">Gráfica de Glucosa Abril </h2>
+              <canvas id="MedicionesChart04"></canvas>
+            </div>
+          
+            <script>
+              const ctxAbril = document.getElementById('MedicionesChart04').getContext('2d');
+          
+              const data04 = {
+                labels: ['02', '04', '07'], // Añade más fechas aquí
+                datasets: [{
+                  label: 'Mediciones',
+                  data: [70, 80, 90], // Añade más valores aquí
+                  borderColor: '#8884d8',
+                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
+                  tension: 0.3,
+                  fill: true,
+                }]
+              };
+          
+              const options04 = {
+                responsive: true,
+                plugins: {
+                  legend: {
+                    display: true,
+                    position: 'top',
+                  },
+                  tooltip: {
+                    enabled: true,
+                  },
+                },
+                scales: {
+                  x: {
+                    title: {
+                      display: true,
+                      text: 'Día  de  Febrero',
+                    },
+                  },
+                  y: {
+                    title: {
+                      display: true,
+                      text: 'Glucosa (mg/dL)',
+                    },
+                    beginAtZero: false,
+                    min:60,
+                  },
+                },
+              };
+          
+              const ctx04 = document.getElementById('MedicionesChart04').getContext('2d');
+              new Chart(ctx04, {
+                type: 'line',
+                data: data04,
+                options: options04,
+              });
+            </script>
+          
+          </div>   
+      
+      </tbody>
+  </table>
+  
+      </section>
+    <!-- ****************************************************************** -->    
+      <section id="5">
+        <title>Tabla de Mediciones</title>
+    <h2 class="cita">Registro de Medidas Mayo 2025</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Glucosa </th>
+                <th>Presión Sis </th>
+                <th>Presión Dias </th>
+                <th>Pulso </th>
+                <th>Temp (°C)</th>
+                <th>Oxig (%)</th>
+                 <th>Peso (kg)</th>
+                <th>OBSERVACIONES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+            <tr>
+                <td></td> <!--Fecha   -->
+                <td></td> <!--Glucosa (mg/dL)  -->
+                <td></td> <!--Presión Sistólica (mmHg) -->
+                <td></td> <!--Presión Diastólica (mmHg)  -->
+                <td></td> <!-- Pulso (bpm)  -->
+                <td></td> <!-- Temperatura (°C)  -->
+                <td></td> <!--Oxigenación (%)  -->
+                <td></td> <!-- Peso (kg)  -->
+                <td class="warning"></td> <!--Observaciones  -->
+            </tr>
+         
+            <tr class="s">
+                <td></td> <!--Fecha   -->
+                <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                <td>50-60</td> <!-- Pulso (bpm)  -->
+                <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                <td>95-100</td> <!--Oxigenación (%)  -->
+                <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+            </tr>
+           
+        
+        </tbody>
+    </table>
+    
+        </section>
+          <!-- ****************************************************************** -->
+        <section id="6">
+          <title>Tabla de Mediciones</title>
+      <h2>Registro de Medidas Junio 2025</h2>
       <table>
           <thead>
               <tr>
@@ -433,7 +1326,7 @@
                   <th>Pulso </th>
                   <th>Temp (°C)</th>
                   <th>Oxig (%)</th>
-                  <th>Peso (kg)</th>
+                   <th>Peso (kg)</th>
                   <th>OBSERVACIONES</th>
               </tr>
           </thead>
@@ -447,7 +1340,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -458,7 +1351,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -469,7 +1362,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -480,7 +1373,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -491,7 +1384,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -502,7 +1395,7 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
               <tr>
                   <td></td> <!--Fecha   -->
@@ -513,13 +1406,102 @@
                   <td></td> <!-- Temperatura (°C)  -->
                   <td></td> <!--Oxigenación (%)  -->
                   <td></td> <!-- Peso (kg)  -->
-                  <td></td> <!--Observaciones  -->
+                  <td class="warning"></td> <!--Observaciones  -->
               </tr>
-              <tr class="k">
-                  <td>31/12</td> <!--Fecha   -->
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+              <tr>
+                  <td></td> <!--Fecha   -->
+                  <td></td> <!--Glucosa (mg/dL)  -->
+                  <td></td> <!--Presión Sistólica (mmHg) -->
+                  <td></td> <!--Presión Diastólica (mmHg)  -->
+                  <td></td> <!-- Pulso (bpm)  -->
+                  <td></td> <!-- Temperatura (°C)  -->
+                  <td></td> <!--Oxigenación (%)  -->
+                  <td></td> <!-- Peso (kg)  -->
+                  <td class="warning"></td> <!--Observaciones  -->
+              </tr>
+           
+              <tr class="s">
+                  <td></td> <!--Fecha   -->
                   <td>70-100</td> <!--Glucosa (mg/dL)  -->
-                  <td>120</td> <!--Presión Sistólica (mmHg) -->
-                  <td>80</td> <!--Presión Diastólica (mmHg)  -->
+                  <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                  <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
                   <td>50-60</td> <!-- Pulso (bpm)  -->
                   <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
                   <td>95-100</td> <!--Oxigenación (%)  -->
@@ -530,902 +1512,1221 @@
           
           </tbody>
       </table>
-    </section>
-    <!-- ****************************************************************** -->
-<section id="5">
-  <h2>Mayo</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
       
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="6">
-  <h2>Junio</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="7">
-  <h2>Julio</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="8">
-  <h2>Agosto</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="9">
-  <h2>setiembre</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="10">
-  <h2>Octubre</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="11">
-  <h2>Noviembre</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
-    <!-- ****************************************************************** -->
-
-<section id="12">
-  <h2>Diciembre</h2>
-  <table>
-      <thead>
-          <tr>
-              <th>Fecha</th>
-              <th>Glucosa </th>
-              <th>Presión Sis </th>
-              <th>Presión Dias </th>
-              <th>Pulso </th>
-              <th>Temp (°C)</th>
-              <th>Oxig (%)</th>
-              <th>Peso (kg)</th>
-              <th>OBSERVACIONES</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td></td> <!--Observaciones  -->
-          </tr>
-          <tr class="k">
-              <td>31/12</td> <!--Fecha   -->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>120</td> <!--Presión Sistólica (mmHg) -->
-              <td>80</td> <!--Presión Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
-         
-      
-      </tbody>
-  </table>
-</section>
+          </section>
+            <!-- ****************************************************************** -->
+          <section id="7">
+            <title>Tabla de Mediciones</title>
+        <h2>Registro de Medidas Julio 2025</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Glucosa </th>
+                    <th>Presión Sis </th>
+                    <th>Presión Dias </th>
+                    <th>Pulso </th>
+                    <th>Temp (°C)</th>
+                    <th>Oxig (%)</th>
+                     <th>Peso (kg)</th>
+                    <th>OBSERVACIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+                <tr>
+                    <td></td> <!--Fecha   -->
+                    <td></td> <!--Glucosa (mg/dL)  -->
+                    <td></td> <!--Presión Sistólica (mmHg) -->
+                    <td></td> <!--Presión Diastólica (mmHg)  -->
+                    <td></td> <!-- Pulso (bpm)  -->
+                    <td></td> <!-- Temperatura (°C)  -->
+                    <td></td> <!--Oxigenación (%)  -->
+                    <td></td> <!-- Peso (kg)  -->
+                    <td class="warning"></td> <!--Observaciones  -->
+                </tr>
+             
+                <tr class="s">
+                    <td></td> <!--Fecha   -->
+                    <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                    <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                    <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                    <td>50-60</td> <!-- Pulso (bpm)  -->
+                    <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                    <td>95-100</td> <!--Oxigenación (%)  -->
+                    <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                    <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                </tr>
+               
+            
+            </tbody>
+        </table>
+        
+            </section>
+  <!-- ****************************************************************** -->
+            <section id="8">
+              <title>Tabla de Mediciones</title>
+          <h2>Registro de Medidas Agosto 2025</h2>
+          <table>
+              <thead>
+                  <tr>
+                      <th>Fecha</th>
+                      <th>Glucosa </th>
+                      <th>Presión Sis </th>
+                      <th>Presión Dias </th>
+                      <th>Pulso </th>
+                      <th>Temp (°C)</th>
+                      <th>Oxig (%)</th>
+                       <th>Peso (kg)</th>
+                      <th>OBSERVACIONES</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+                  <tr>
+                      <td></td> <!--Fecha   -->
+                      <td></td> <!--Glucosa (mg/dL)  -->
+                      <td></td> <!--Presión Sistólica (mmHg) -->
+                      <td></td> <!--Presión Diastólica (mmHg)  -->
+                      <td></td> <!-- Pulso (bpm)  -->
+                      <td></td> <!-- Temperatura (°C)  -->
+                      <td></td> <!--Oxigenación (%)  -->
+                      <td></td> <!-- Peso (kg)  -->
+                      <td class="warning"></td> <!--Observaciones  -->
+                  </tr>
+               
+                  <tr class="s">
+                      <td></td> <!--Fecha   -->
+                      <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                      <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                      <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                      <td>50-60</td> <!-- Pulso (bpm)  -->
+                      <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                      <td>95-100</td> <!--Oxigenación (%)  -->
+                      <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                      <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                  </tr>
+                 
+              
+              </tbody>
+          </table>
+          
+              </section>
+  <!-- ****************************************************************** -->
+              <section id="9">
+                <title>Tabla de Mediciones</title>
+            <h2>Registro de Medidas Septiembre 2025</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Glucosa </th>
+                        <th>Presión Sis </th>
+                        <th>Presión Dias </th>
+                        <th>Pulso </th>
+                        <th>Temp (°C)</th>
+                        <th>Oxig (%)</th>
+                         <th>Peso (kg)</th>
+                        <th>OBSERVACIONES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                    <tr>
+                        <td></td> <!--Fecha   -->
+                        <td></td> <!--Glucosa (mg/dL)  -->
+                        <td></td> <!--Presión Sistólica (mmHg) -->
+                        <td></td> <!--Presión Diastólica (mmHg)  -->
+                        <td></td> <!-- Pulso (bpm)  -->
+                        <td></td> <!-- Temperatura (°C)  -->
+                        <td></td> <!--Oxigenación (%)  -->
+                        <td></td> <!-- Peso (kg)  -->
+                        <td class="warning"></td> <!--Observaciones  -->
+                    </tr>
+                 
+                    <tr class="s">
+                        <td></td> <!--Fecha   -->
+                        <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                        <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                        <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                        <td>50-60</td> <!-- Pulso (bpm)  -->
+                        <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                        <td>95-100</td> <!--Oxigenación (%)  -->
+                        <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                        <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                    </tr>
+                   
+                
+                </tbody>
+            </table>
+            
+                </section>
+  <!-- ****************************************************************** -->
+                <section id="10">
+                  <title>Tabla de Mediciones</title>
+              <h2>Registro de Medidas Octubre 2025</h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Fecha</th>
+                          <th>Glucosa </th>
+                          <th>Presión Sis </th>
+                          <th>Presión Dias </th>
+                          <th>Pulso </th>
+                          <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
+                          <th>OBSERVACIONES</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                   
+                      <tr class="s">
+                          <td></td> <!--Fecha   -->
+                          <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                          <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                          <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                          <td>50-60</td> <!-- Pulso (bpm)  -->
+                          <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                          <td>95-100</td> <!--Oxigenación (%)  -->
+                          <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                          <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                      </tr>
+                     
+                  
+                  </tbody>
+              </table>
+              
+                  </section>
+  <!-- ****************************************************************** -->
+                <section id="11">
+                  <title>Tabla de Mediciones</title>
+            <h2 class="cita">Registro de Medidas Noviembre 2025</h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Fecha</th>
+                          <th>Glucosa </th>
+                          <th>Presión Sis </th>
+                          <th>Presión Dias </th>
+                          <th>Pulso </th>
+                          <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
+                          <th>OBSERVACIONES</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                   
+                      <tr class="s">
+                          <td></td> <!--Fecha   -->
+                          <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                          <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                          <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                          <td>50-60</td> <!-- Pulso (bpm)  -->
+                          <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                          <td>95-100</td> <!--Oxigenación (%)  -->
+                          <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                          <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                      </tr>
+                     
+                  
+                  </tbody>
+              </table>
+              
+                  </section>
+  <!-- ****************************************************************** -->
+                <section id="12">
+                  <title>Tabla de Mediciones</title>
+              <h2>Registro de Medidas Diciembre 2025</h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Fecha</th>
+                          <th>Glucosa </th>
+                          <th>Presión Sis </th>
+                          <th>Presión Dias </th>
+                          <th>Pulso </th>
+                          <th>Temp (°C)</th>
+                          <th>Oxig (%)</th>
+                           <th>Peso (kg)</th>
+                          <th>OBSERVACIONES</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                      <tr>
+                          <td></td> <!--Fecha   -->
+                          <td></td> <!--Glucosa (mg/dL)  -->
+                          <td></td> <!--Presión Sistólica (mmHg) -->
+                          <td></td> <!--Presión Diastólica (mmHg)  -->
+                          <td></td> <!-- Pulso (bpm)  -->
+                          <td></td> <!-- Temperatura (°C)  -->
+                          <td></td> <!--Oxigenación (%)  -->
+                          <td></td> <!-- Peso (kg)  -->
+                          <td class="warning"></td> <!--Observaciones  -->
+                      </tr>
+                   
+                      <tr class="s">
+                          <td></td> <!--Fecha   -->
+                          <td>70-100</td> <!--Glucosa (mg/dL)  -->
+                          <td>Máx 120</td> <!--Presión Sistólica (mmHg) -->
+                          <td>Min 80</td> <!--Presión Diastólica (mmHg)  -->
+                          <td>50-60</td> <!-- Pulso (bpm)  -->
+                          <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
+                          <td>95-100</td> <!--Oxigenación (%)  -->
+                          <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+                          <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
+                      </tr>
+                     
+                  
+                  </tbody>
+              </table>
+              
+                  </section>
+  <!-- ****************************************************************** -->
 
 
 
