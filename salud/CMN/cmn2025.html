@@ -92,21 +92,21 @@
             <td>89</td> <!--Glucosa (mg/dL)  -->
             <td>119</td> <!--Presión Sistólica (mmHg) -->
             <td>73</td> <!--Presión Diastólica (mmHg)  -->
-            <td>87</td> <!-- Pulso (bpm)  -->
+            <td>57</td> <!-- Pulso (bpm)  -->
             <td></td> <!-- Temperatura (°C)  -->
             <td>98</td> <!--Oxigenación (%)  -->
             <td>64</td> <!-- Peso (kg)  -->
             <td class="warning"></td> <!--Observaciones  -->
         </tr>
         <tr>
-            <td>04</td> <!--Fecha   -->
-            <td>76</td> <!--Glucosa (mg/dL)  -->
-            <td>120</td> <!--Presión Sistólica (mmHg) -->
-            <td>78</td> <!--Presión Diastólica (mmHg)  -->
-            <td>68</td> <!-- Pulso (bpm)  -->
+            <td>11</td> <!--Fecha   -->
+            <td>94</td> <!--Glucosa (mg/dL)  -->
+            <td>106</td> <!--Presión Sistólica (mmHg) -->
+            <td>69</td> <!--Presión Diastólica (mmHg)  -->
+            <td>51</td> <!-- Pulso (bpm)  -->
             <td></td> <!-- Temperatura (°C)  -->
-            <td></td> <!--Oxigenación (%)  -->
-            <td></td> <!-- Peso (kg)  -->
+            <td>98</td> <!--Oxigenación (%)  -->
+            <td>64</td> <!-- Peso (kg)  -->
             <td class="warning"></td> <!--Observaciones  -->
         </tr>
         <tr>
@@ -261,7 +261,7 @@
             <td>50-60</td> <!-- Pulso (bpm)  -->
             <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
             <td>95-100</td> <!--Oxigenación (%)  -->
-            <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
+            <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
             <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
         </tr>
     </tbody>
@@ -277,10 +277,10 @@
     const ctx = document.getElementById('MedicionesChart01').getContext('2d');
 
     const data01 = {
-      labels: ['02', '04', '07'], // Añade más fechas aquí
+      labels: ['06', '11', ''], // Añade más fechas aquí
       datasets: [{
         label: 'Valores', //titulo
-        data: [89, 76, 148], // Añade más valores aquí
+        data: [89, 94, ], // Añade más valores aquí
         borderColor: '#8884d8',
         backgroundColor: 'rgba(136, 132, 216, 0.2)',
         tension: 0.3,
