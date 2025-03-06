@@ -262,10 +262,10 @@
     const ctx = document.getElementById('MedicionesChart01').getContext('2d');
 
     const data01 = {
-      labels: ['02', '04', '07'], // Añade más fechas aquí
+      labels: ['2', '4', '7', '9', '11', '14', '16', '18', '21', '23', '25', '28', '30'], // Añade más fechas aquí
       datasets: [{
         label: 'Valores', //titulo
-        data: [77, 76, 148], // Añade más valores aquí
+        data: [77, 76, 92, 68, 95, 101, 100, 98, 108, 91, 73, 85, 71], // Añade más valores aquí
         borderColor: '#8884d8',
         backgroundColor: 'rgba(136, 132, 216, 0.2)',
         tension: 0.3,
@@ -616,15 +616,15 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>6</td> <!--Fecha   -->
+              <td>85</td> <!--Glucosa (mg/dL)  -->
+              <td>131</td> <!--Presión Sistólica (mmHg) -->
+              <td>75</td> <!--Presión Diastólica (mmHg)  -->
+              <td>62</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+              <td class="warning">Sin Pastilla para glucosa</td> <!--Observaciones  -->
           </tr>
           <tr>
               <td></td> <!--Fecha   -->
@@ -784,10 +784,10 @@
       const ctxM = document.getElementById('MedicionesChart03').getContext('2d');
   
       const data03 = {
-        labels: ['01', '04', '07'], // Añade más fechas aquí
+        labels: ['01', '04', '06'], // Añade más fechas aquí
         datasets: [{
           label: 'Mediciones',
-          data: [78, 74, 80], // Añade más valores aquí
+          data: [78, 74, 85], // Añade más valores aquí
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
