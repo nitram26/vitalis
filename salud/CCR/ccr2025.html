@@ -19,13 +19,13 @@
     <!-- ****************************************************************** -->
     <h1 class="init">2025</h1>
      <h3 class="cita">"No aceptes como Verdad lo que no proviene del Amor, <br> ni aceptes como Amor lo que no proviene de la Verdad"
-          <br>EDITH STEIN</h3>
-
-
+          <br>EDITH STEIN</h3> <hr>
+    <!-- ****************************************************************** -->
+    <h3>TIEMPO:<div  id="semana-info"></div></h3> <HR>
     <!-- ****************************************************************** -->
 
     <section id="00">
-      <hr>
+  
       <h1> MEDIDAS</h1>
       <div>
         <ol>
@@ -602,7 +602,7 @@
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
-              <td class="warning">Sin Pastilla para glucosa</td> <!--Observaciones  -->
+              <td class="warning">1/4 Pastilla para glucosa</td> <!--Observaciones  -->
           </tr>
           <tr>
               <td>08</td> <!--Fecha   -->
@@ -616,11 +616,11 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>11</td> <!--Fecha   -->
+              <td>80</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">140</td> <!--Presión Sistólica (mmHg) -->
+              <td>82</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
@@ -762,10 +762,10 @@
       const ctxM = document.getElementById('MedicionesChart03').getContext('2d');
   
       const data03 = {
-        labels: ['01', '04', '06'], // Añade más fechas aquí
+        labels: ['01', '04', '06','08', '11'], // Añade más fechas aquí
         datasets: [{
           label: 'Mediciones',
-          data: [78, 74, 85], // Añade más valores aquí
+          data: [78, 74, 85, 84, 80], // Añade más valores aquí
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
@@ -2694,6 +2694,6 @@
 
 
 
-
+<script src="../../JS/numeroDeSemana.js"></script>
 </body>
 </html>

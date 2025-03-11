@@ -67,9 +67,6 @@
 
 
      <!-- ****************************************************************** -->
-
-
-
     <section id="1">
     <title>Tabla de Mediciones</title>
 <h2 class="cita">Registro de Medidas Enero 2025</h2>
@@ -510,14 +507,14 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>09</td> <!--Fecha   -->
+              <td>112</td> <!--Glucosa (mg/dL)  -->
+              <td>117</td> <!--Presión Sistólica (mmHg) -->
+              <td>74</td> <!--Presión Diastólica (mmHg)  -->
+              <td>54</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>64</td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
@@ -632,10 +629,10 @@
       const ctx3 = document.getElementById('MedicionesChart03').getContext('2d');//2 cambios
   
       const data03 = {  //data
-        labels: ['05', '11', ], // Fechas
+        labels: ['05', '09', ], // Fechas
         datasets: [{
           label: 'Valores', //titulo
-          data: [ 94, 94], // Valores
+          data: [ 94, 112], // Valores
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
