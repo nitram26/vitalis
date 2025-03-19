@@ -540,14 +540,14 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>19</td> <!--Fecha   -->
+              <td>105</td> <!--Glucosa (mg/dL)  -->
+              <td>110</td> <!--Presión Sistólica (mmHg) -->
+              <td>70</td> <!--Presión Diastólica (mmHg)  -->
+              <td>52</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>63</td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
@@ -629,10 +629,10 @@
       const ctx3 = document.getElementById('MedicionesChart03').getContext('2d');//2 cambios
   
       const data03 = {  //data
-        labels: ['05', '09', '12', '17' ], // Fechas
+        labels: ['05', '09', '12', '17', '19' ], // Fechas
         datasets: [{
           label: 'Valores', //titulo
-          data: [ 94, 112, 91, 102], // Valores
+          data: [ 94, 112, 91, 102, 105], // Valores
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
