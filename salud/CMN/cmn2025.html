@@ -508,7 +508,7 @@
           </tr>
           <tr>
               <td>09</td> <!--Fecha   -->
-              <td>112</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">112</td> <!--Glucosa (mg/dL)  -->
               <td>117</td> <!--Presión Sistólica (mmHg) -->
               <td>74</td> <!--Presión Diastólica (mmHg)  -->
               <td>54</td> <!-- Pulso (bpm)  -->
@@ -530,7 +530,7 @@
           </tr>
           <tr>
               <td>17</td> <!--Fecha   -->
-              <td>102</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">102</td> <!--Glucosa (mg/dL)  -->
               <td>113</td> <!--Presión Sistólica (mmHg) -->
               <td>69</td> <!--Presión Diastólica (mmHg)  -->
               <td>51</td> <!-- Pulso (bpm)  -->
@@ -541,7 +541,7 @@
           </tr>
           <tr>
               <td>19</td> <!--Fecha   -->
-              <td>105</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">105</td> <!--Glucosa (mg/dL)  -->
               <td>110</td> <!--Presión Sistólica (mmHg) -->
               <td>70</td> <!--Presión Diastólica (mmHg)  -->
               <td>52</td> <!-- Pulso (bpm)  -->
@@ -552,7 +552,7 @@
           </tr>
           <tr>
               <td>23</td> <!--Fecha   -->
-              <td>102</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">102</td> <!--Glucosa (mg/dL)  -->
               <td>102</td> <!--Presión Sistólica (mmHg) -->
               <td>64</td> <!--Presión Diastólica (mmHg)  -->
               <td>50</td> <!-- Pulso (bpm)  -->
@@ -562,25 +562,25 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>26</td> <!--Fecha   -->
+              <td>97</td> <!--Glucosa (mg/dL)  -->
+              <td>117</td> <!--Presión Sistólica (mmHg) -->
+              <td>65</td> <!--Presión Diastólica (mmHg)  -->
+              <td>52</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>63</td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>31</td> <!--Fecha   -->
+              <td>89</td> <!--Glucosa (mg/dL)  -->
+              <td>103</td> <!--Presión Sistólica (mmHg) -->
+              <td>68</td> <!--Presión Diastólica (mmHg)  -->
+              <td>53</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>62.5</td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
@@ -629,10 +629,10 @@
       const ctx3 = document.getElementById('MedicionesChart03').getContext('2d');//2 cambios
   
       const data03 = {  //data
-        labels: ['05', '09', '12', '17', '19', '23' ], // Fechas
+        labels: ['05', '09', '12', '17', '19', '23', '26', '31' ], // Fechas
         datasets: [{
           label: 'Valores', //titulo
-          data: [ 94, 112, 91, 102, 105, 102], // Valores
+          data: [ 94, 112, 91, 102, 105, 102, 97, 89], // Valores
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,

@@ -640,7 +640,7 @@
           <tr>
             <td>15</td> <!-- Pulso (bpm)  -->
             <td>81</td> <!--Fecha   -->
-            <td>145</td> <!--Glucosa (mg/dL)  -->
+            <td class="warning">145</td> <!--Glucosa (mg/dL)  -->
             <td>79</td> <!--Presión Sistólica (mmHg) -->
             <td>60</td> <!--Presión Diastólica (mmHg)  -->
             <td></td> <!-- Temperatura (°C)  -->
@@ -663,7 +663,7 @@
           <tr>
               <td>20</td> <!--Fecha   -->
               <td>87</td> <!--Glucosa (mg/dL)  -->
-              <td>149</td> <!--Presión Sistólica (mmHg) -->
+              <td class="warning">149</td> <!--Presión Sistólica (mmHg) -->
               <td>79</td> <!--Presión Diastólica (mmHg)  -->
               <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
@@ -672,44 +672,44 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>22</td> <!--Fecha   -->
+              <td>83</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">141</td> <!--Presión Sistólica (mmHg) -->
+              <td>84</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>25</td> <!--Fecha   -->
+              <td>91</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">144</td> <!--Presión Sistólica (mmHg) -->
+              <td>81</td> <!--Presión Diastólica (mmHg)  -->
+              <td>61</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>27</td> <!--Fecha   -->
+              <td>99</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">158</td> <!--Presión Sistólica (mmHg) -->
+              <td>87</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>29</td> <!--Fecha   -->
+              <td>86</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">145</td> <!--Presión Sistólica (mmHg) -->
+              <td>78</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
@@ -763,10 +763,10 @@
       const ctxM = document.getElementById('MedicionesChart03').getContext('2d');
   
       const data03 = {
-        labels: ['01', '04', '06','08', '11', '13', '15', '18' ], // Añade más fechas aquí
+        labels: ['01', '04', '06','08', '11', '13', '15', '18' , '20', '22', '25', '27', '29' ], // Añade más fechas aquí
         datasets: [{
           label: 'Mediciones',
-          data: [78, 74, 85, 84, 80, 75, 81, 88], // Añade más valores aquí
+          data: [78, 74, 85, 84, 80, 75, 81, 88, 87, 83, 91, 99, 96], // Añade más valores aquí
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
