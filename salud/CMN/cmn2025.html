@@ -721,7 +721,7 @@
               <td></td> <!-- Temperatura (°C)  -->
               <td>99</td> <!--Oxigenación (%)  -->
               <td>62.5</td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+              <td class="warning">2 huevos con sal y aceite de oliva</td> <!--Observaciones  -->
           </tr>
           <tr>
               <td>14</td> <!--Fecha   -->
@@ -732,7 +732,7 @@
               <td></td> <!-- Temperatura (°C)  -->
               <td>99</td> <!--Oxigenación (%)  -->
               <td>62.5</td> <!-- Peso (kg)  -->
-              <td class="warning">1 Hora// Comí 2 huevos con sal y aceite de oliva </td> <!--Observaciones  -->
+              <td class="warning">1 Hora después </td> <!--Observaciones  -->
           </tr>
           <tr>
               <td></td> <!--Fecha   -->
@@ -835,10 +835,10 @@
       const ctx4 = document.getElementById('MedicionesChart04').getContext('2d');// 2 cambios
   
       const data04 = {  //data
-        labels: ['06', '11', ], // Fechas
+        labels: ['07', '14', '14'], // Fechas
         datasets: [{
           label: 'Valores', //titulo
-          data: [89, 94,], // Valores
+          data: [109, 129, 103], // Valores
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
