@@ -1106,44 +1106,44 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>06</td> <!--Fecha   -->
+              <td>93</td> <!--Glucosa (mg/dL)  -->
+              <td>130</td> <!--Presión Sistólica (mmHg) -->
+              <td>78</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>08</td> <!--Fecha   -->
+              <td>79</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">155</td> <!--Presión Sistólica (mmHg) -->
+              <td>85</td> <!--Presión Diastólica (mmHg)  -->
+              <td>62</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>10</td> <!--Fecha   -->
+              <td>85</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">143</td> <!--Presión Sistólica (mmHg) -->
+              <td>86</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
+              <td>13</td> <!--Fecha   -->
+              <td>99</td> <!--Glucosa (mg/dL)  -->
+              <td class="warning">146</td> <!--Presión Sistólica (mmHg) -->
+              <td>80</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
               <td></td> <!-- Temperatura (°C)  -->
               <td></td> <!--Oxigenación (%)  -->
               <td></td> <!-- Peso (kg)  -->
@@ -1291,10 +1291,10 @@
           
               const data05 = {
                 // cambiar numero del mes
-                labels: ['03'], // Añade más fechas aquí
+                labels: ['03', '06', '08', '10', '13'], // Añade más fechas aquí
                 datasets: [{
                   label: 'Mediciones',
-                  data: [84 ], // Añade más valores aquí
+                  data: [84, 93, 79, 85, 99,  ], // Añade más valores aquí
                   borderColor: '#8884d8',
                   backgroundColor: 'rgba(136, 132, 216, 0.2)',
                   tension: 0.3,
@@ -1613,7 +1613,7 @@
               // cambiar numero del mes en ctx y chart
               new Chart(ctx06, {
                 type: 'line',
-                data: data05,
+                data: data06,
                 options: options06,
                 // cambiar numero del mes en data y options
               });
