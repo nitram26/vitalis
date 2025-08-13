@@ -1,81 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Salud</title>
-  <style>
-    .imgLocal, .img {
-      width: 100%;
-      max-width: 90%;
-      margin: 0 auto;
-      display: block;
-      border: 5px double brown;
-      border-radius: 1em;
-    }
-
-    .img {
-      max-width: 30%;
-    }
-
-    .uno {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1em;
-    }
-
-    @media (max-width: 768px) {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Salud</title>
+    <style>
+      .imgLocal,
       .img {
-        max-width: 100%;
-        margin: 0.5em auto;
+        width: 100%;
+        max-width: 90%;
+        margin: 0 auto;
+        display: block;
+        border: 5px double brown;
+        border-radius: 1em;
       }
-    }
-  </style>
-</head>
-<body>
-  <p id="alInicio" class="principio"></p>
-  <header>
-    <div class="container">
-      <p class="logo"> Control de Salud</p>
-      <!-- ****************************************************** -->
-      <a href="#alInicio"><img src="../../media/CERVERA.png" alt="" class="logoC"></a>
-      <a href="./salud/CCR/ccr2025.html" class="nombre">CCR  </a>
-  
-     
-    </div>
-  </header> <br><br>
-  <!-- ****************************************************************** -->
 
-  <h1 class="init">Familia</h1>
-  <h3 class="cita">
-    "No aceptes como Verdad lo que no proviene del Amor,<br> 
-    ni aceptes como Amor lo que no proviene de la Verdad" <br>
-    Edith Stein
-  </h3>
-  <section id="00">
-    <img src="./media/FAMILIA1.jpg" alt="Familia 2024" class="imgLocal">
-  </section>
-  <section id="01">
-    <div class="uno">
-      <img src="./media/2024.jpg" alt="Imagen 2024" class="img">
-      <img src="./media/FAMILIA.jpg" alt="Foto Familiar" class="img">
-      <img src="./media/25 AÑOS.jpeg" alt="25 Años" class="img">
-    </div>
-  </section>
-  <footer>
-    <div class="footer-content">
-      <h3>Web Salud</h3>
-      <p>Gracias por visitarnos. Espero nos envíes tus fotos y sugerencias</p>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 Noviembre | Diseñado por <a href="./salud/CMN/cmn2025.html">Carlos C</a></p>
-      <h2><div class="semana-info" id="semana-info"></div>  </h2>
-      <button id="info-button" class="boton">SEMANA / DIA</button>
-    </div>
-  </footer>
-  <!-- ********************************** -->
-   <script src="./JS/numeroDeSemana.js"></script>
-</body>
+      .img {
+        max-width: 30%;
+      }
+
+      .uno {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1em;
+      }
+
+      @media (max-width: 768px) {
+        .img {
+          max-width: 100%;
+          margin: 0.5em auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p id="alInicio" class="principio"></p>
+    <header>
+      <div class="container">
+        <p class="logo">Control de Salud</p>
+        <!-- ****************************************************** -->
+        <a href="#alInicio">
+          <img src="../../media/CERVERA.png" alt="" class="logoC" />
+        </a>
+        <a href="./salud/CCR/ccr2025.html" class="nombre">CCR</a>
+        <a href="./salud/CMN/index.html" class="nombre">CMN</a>
+      </div>
+    </header>
+    <br />
+    <br />
+    <!-- ****************************************************************** -->
+
+    <h1 class="init">Familia</h1>
+    <h3 class="cita">
+      "No aceptes como Verdad lo que no proviene del Amor,
+      <br />
+      ni aceptes como Amor lo que no proviene de la Verdad"
+      <br />
+      Edith Stein
+    </h3>
+    <section id="00">
+      <img src="./media/FAMILIA1.jpg" alt="Familia 2024" class="imgLocal" />
+    </section>
+    <section id="01">
+      <div class="uno">
+        <img src="./media/2024.jpg" alt="Imagen 2024" class="img" />
+        <img src="./media/FAMILIA.jpg" alt="Foto Familiar" class="img" />
+        <img src="./media/25 AÑOS.jpeg" alt="25 Años" class="img" />
+      </div>
+    </section>
+    <footer>
+      <div class="footer-content">
+        <h3>Web Salud</h3>
+        <p>Gracias por visitarnos. Espero nos envíes tus fotos y sugerencias</p>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 Noviembre | Diseñado por
+          <a href="./salud/CMN/cmn2025.html">Carlos C</a>
+        </p>
+        <h2><div class="semana-info" id="semana-info"></div></h2>
+        <button id="info-button" class="boton">SEMANA / DIA</button>
+      </div>
+    </footer>
+    <!-- ********************************** -->
+    <script src="./JS/numeroDeSemana.js"></script>
+  </body>
 </html>

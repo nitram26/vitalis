@@ -96,7 +96,15 @@ section{
   border: brown 2px solid;
   padding: 0.5em;
   margin-right: 1em;
+  color: blue;
+  text-decoration: none;
 }
+
+.li>a{
+  color: blue;
+  text-decoration: none;
+}
+
 .control{
   border: brown 4px double;
   padding: 1em;
