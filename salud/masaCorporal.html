@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculadora de IMC y Peso Ideal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root {
+        --ok: #2e7d32;
+        --warn: #f9a825;
+        --bad: #c62828;
+        --info-bg: #e7f3fe;
+        --info-border: #2196f3;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 90%;
+        margin: 24px auto;
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        border: black solid 1px;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        border: white double 5px;
+        background-color: brown;
+        border-radius: 0.5em;
+        padding: 0.5em;
+      }
+      label {
+        font-weight: 600;
+        display: block;
+        margin-top: 10px;
+      }
+      input,
+      select,
+      button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 6px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-sizing: border-box;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+      button {
+        cursor: pointer;
+        background: #4caf50;
+        color: white;
+        font-size: 16px;
+        border: none;
+      }
+      button:hover {
+        background: #45a049;
+      }
+      .limpiar {
+        background: #f44336;
+      }
+      .limpiar:hover {
+        background: #d32f2f;
+      }
+      #resultado {
+        margin-top: 18px;
+        padding: 12px;
+        background: var(--info-bg);
+        border-left: 5px solid var(--info-border);
+        border-radius: 8px;
+        line-height: 1.5;
+      }
+      .chip {
+        display: inline-block;
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        margin-left: 6px;
+        vertical-align: middle;
+      }
+      .ok {
+        background: var(--ok);
+      }
+      .warn {
+        background: var(--warn);
+      }
+      .bad {
+        background: var(--bad);
+      }
+      .muted {
+        color: #555;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Calculadora de IMC
+      <br />
+      y Peso Ideal
+    </h1>
+
+    <div class="row">
+      <div>
+        <label>Altura (m)</label>
+        <input type="number" step="0.01" id="altura" placeholder="Ej: 1.62" />
+      </div>
+      <div>
+        <label>Peso (kg)</label>
+        <input type="number" step="0.1" id="peso" placeholder="Ej: 65" />
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <label>Edad</label>
+        <input type="number" id="edad" placeholder="Ej: 65" />
+      </div>
+      <div>
+        <label>Sexo</label>
+        <select id="sexo">
+          <option value="">Seleccione…</option>
+          <option value="Hombre">Hombre</option>
+          <option value="Mujer">Mujer</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 12px">
+      <button onclick="calcular()">Calcular</button>
+      <button class="limpiar" onclick="limpiar()">Limpiar</button>
+    </div>
+
+    <div id="resultado"></div>
+
+    <script>
+      function redondear(num, dec = 1) {
+        return Number(num.toFixed(dec));
+      }
+
+      function validar(altura, peso, edad, sexo) {
+        if (!altura || !peso || !edad || !sexo)
+          return "Por favor complete todos los campos.";
+        if (altura < 1 || altura > 2.5)
+          return "Altura fuera de rango razonable (1.00–2.50 m).";
+        if (peso < 20 || peso > 300)
+          return "Peso fuera de rango razonable (20–300 kg).";
+        if (edad < 10 || edad > 120)
+          return "Edad fuera de rango razonable (10–120 años).";
+        return null;
+      }
+
+      function clasificarIMC(imc) {
+        if (imc < 18.5) return { etiqueta: "Bajo peso", clase: "bad" };
+        if (imc < 25) return { etiqueta: "Normal", clase: "ok" };
+        if (imc < 30) return { etiqueta: "Sobrepeso", clase: "warn" };
+        return { etiqueta: "Obesidad", clase: "bad" };
+      }
+
+      function calcular() {
+        const altura = parseFloat(document.getElementById("altura").value);
+        const peso = parseFloat(document.getElementById("peso").value);
+        const edad = parseInt(document.getElementById("edad").value);
+        const sexo = document.getElementById("sexo").value;
+        const out = document.getElementById("resultado");
+
+        const err = validar(altura, peso, edad, sexo);
+        if (err) {
+          out.innerHTML = `<b style="color:#c62828">${err}</b>`;
+          return;
+        }
+
+        const imc = peso / (altura * altura);
+        const status = clasificarIMC(imc);
+
+        // Rango IDEAL SIEMPRE: IMC 22–25
+        const pesoMinIdeal = 22 * altura * altura;
+        const pesoMaxIdeal = 25 * altura * altura;
+
+        // Peso objetivo (punto medio del rango ideal: IMC 23.5)
+        const pesoObjetivo = 23.5 * altura * altura;
+
+        // Rango ACEPTABLE para ≥60: IMC 22–27 (sólo para mostrar adicional)
+        let pesoMaxAceptable = null;
+        if (edad >= 60) {
+          pesoMaxAceptable = 27 * altura * altura;
+        }
+
+        // Recomendación
+        let recomendacion = "";
+        if (imc < 18.5) {
+          recomendacion =
+            "Aumente masa muscular con ejercicios de fuerza y ajuste su ingesta calórica/proteica.";
+        } else if (imc < 25) {
+          recomendacion =
+            "Mantenga dieta equilibrada, pasos diarios y 2–3 sesiones de fuerza por semana.";
+        } else if (imc < 30) {
+          recomendacion =
+            "Ajuste calorías, priorice proteína y realice ejercicio aeróbico + fuerza.";
+        } else {
+          recomendacion =
+            "Considere apoyo profesional para un plan integral (nutrición, actividad y seguimiento).";
+        }
+
+        // Ajuste para ≥60
+        if (edad >= 60 && imc >= 22 && imc <= 27) {
+          recomendacion =
+            "Rango aceptable para su edad. Priorice fuerza muscular, equilibrio y una buena ingesta de proteína.";
+        }
+
+        // Indicadores visuales según si el IMC está dentro del rango ideal 22–25
+        let chipClase = status.clase;
+        let chipTexto = status.etiqueta;
+
+        out.innerHTML = `
+    <div>
+      <b>IMC:</b> ${imc.toFixed(2)}
+      <span class="chip ${chipClase}">${chipTexto}</span><br>
+
+      <b>Peso ideal (IMC 22–25):</b> ${redondear(pesoMinIdeal)}–${redondear(
+          pesoMaxIdeal
+        )} kg<br>
+      <b>Peso objetivo (punto medio):</b> ${redondear(pesoObjetivo)} kg
+      ${
+        edad >= 60
+          ? `<br><b>Rango aceptable ≥60 (IMC 22–27):</b> ${redondear(
+              22 * altura * altura
+            )}–${redondear(pesoMaxAceptable)} kg`
+          : ""
+      }
+
+      <div style="margin-top:10px;"><b>Recomendación:</b> ${recomendacion}</div>
+      <div class="muted" style="margin-top:6px;">
+        Nota: El IMC no distingue masa muscular y grasa. Úselo como guía general.
+      </div>
+    </div>
+  `;
+      }
+
+      function limpiar() {
+        document.getElementById("altura").value = "";
+        document.getElementById("peso").value = "";
+        document.getElementById("edad").value = "";
+        document.getElementById("sexo").value = "";
+        document.getElementById("resultado").innerHTML = "";
+      }
+    </script>
+  </body>
+</html>
