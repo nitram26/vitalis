@@ -2,7 +2,8 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Calculadora de IMC y Peso Ideal</title>
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="../../style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style>
       :root {
@@ -14,22 +15,18 @@
       }
       body {
         font-family: Arial, sans-serif;
-        max-width: 90%;
-        margin: 24px auto;
+        max-width: 95%;
+
         background: #f9f9f9;
         padding: 20px;
         border-radius: 12px;
         box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         border: black solid 1px;
       }
-      h1 {
-        text-align: center;
-        margin-top: 0;
+      h3 {
         color: white;
-        border: white double 5px;
-        background-color: brown;
-        border-radius: 0.5em;
-        padding: 0.5em;
+        margin-top: 0.7em;
+        margin-left: 1em;
       }
       label {
         font-weight: 600;
@@ -50,6 +47,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
+        margin-top: 2em;
       }
       button {
         cursor: pointer;
@@ -98,14 +96,27 @@
         color: #555;
         font-size: 13px;
       }
+      .container {
+        margin-top: -1em;
+      }
     </style>
   </head>
   <body>
-    <h1>
-      Calculadora de IMC
-      <br />
-      y Peso Ideal
-    </h1>
+    <p id="alInicio" class="principio"></p>
+    <header>
+      <div class="container">
+        <p class="logo">SALUD</p>
+        <!-- ****************************************************** -->
+        <a href="#alInicio">
+          <img src="../../media/CERVERA.png" alt="" class="logoC" />
+        </a>
+        <a href="../index.html" class="nombre">INICIO</a>
+        <h3>IMC y Peso</h3>
+      </div>
+    </header>
+    <br />
+    <br />
+    <!-- ****************************************************************** -->
 
     <div class="row">
       <div>
