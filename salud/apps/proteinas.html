@@ -3,8 +3,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Registro diario de proteínas</title>
+  <link rel="stylesheet" href="../../style.css">
+  <title>Registro  de proteínas</title>
   <style>
+  .hr {
+  border: none;          /* quitamos el borde por defecto */
+  height: 2px;             /* grosor de la línea */
+  background-color: brown; /* color deseado */
+}
+    select{
+      background-color: blanchedalmond;
+      font-size: 1.4em;
+      width: 20em;
+    }
     .red{
         color: red;
     }
@@ -14,14 +25,14 @@
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
     html,body{height:100%; margin:0; background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%);}
-    .app{max-width:980px; margin:28px auto; padding:22px;}
+    .app{max-width:1200px; margin:28px auto; padding:22px;}
     header{display:flex;gap:16px;align-items:center;}
     h1{margin:0;font-size:20px;color:#0f172a}
     .controls{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
     input[type=number], select{width:160px;padding:8px;border-radius:8px;border:1px solid #e6e9ef}
     button{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
     button.ghost{background:transparent;color:var(--accent);border:1px solid rgba(43,108,176,0.15)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px; border: blue double 5px; border-radius: 1em;}
     .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
     .meals{display:grid;gap:12px}
     .meal{border:1px dashed rgba(15,23,42,0.04);padding:10px;border-radius:10px}
@@ -33,7 +44,7 @@
     .bar{height:100%;background:linear-gradient(90deg,var(--accent),#5eead4);width:0%}
     footer{margin-top:18px;text-align:center;color:var(--muted);font-size:12px}
     .row{display:flex;gap:8px;align-items:center}
-    .small{font-size:12px;color:var(--muted)}
+    .small{font-size:20px;color:var(--muted)}
     /* responsive */
     @media (max-width:880px){.grid{grid-template-columns:1fr;}.app{padding:12px}}
 
@@ -43,12 +54,12 @@
   <div class="app">
     <header>
       <div>
-        <h1>Registro de Proteínas</h1>
+        <h1>REGISTRO DE PROTEINAS</h1>
       </div>
     </header>
 
     <div class="controls">
-      <label class="row small">Meta diaria (g): <input id="target" type="number" min="0" value="100"></label>
+      <label class="row small">Meta diaria (g): <input id="target" type="number" min="0" value="90"></label>
       <label class="row small">Fecha: <input id="date" type="date"></label>
       <button id="export">Exportar CSV</button>
       <button id="clear" class="ghost">Limpiar día</button>
@@ -59,10 +70,10 @@
         <div class="meals">
           <!-- Desayuno01 -->
           <div class="meal" data-meal="desayuno">
-            <h3>Desayuno</h3>
+            <h3><i>DESAYUNO</i></h3>
             <div class="items" id="desayuno-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <select data-meal="desayuno" class="food-select">
+              <select data-meal="desayuno" class="food-select" style="width: 13em;">
                 <option value="">Selecciona Alimento</option>
                 <option value="" class="red">VALOR POR 100 g</option>
                  <option value="aceituna">Aceituna [2g]</option>
@@ -84,17 +95,17 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="desayuno" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="desayuno" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" />
+              <input data-meal="desayuno" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
               <button data-action="add" data-meal="desayuno">Añadir</button>
             </div>
-          </div>
+          </div> <h2 class="hr"></h2>
 
           <!-- Media mañana -->
           <div class="meal" data-meal="media-mañana">
-            <h3>Media mañana</h3>
+            <h3><i>MEDIA MAÑANA</i></h3>
             <div class="items" id="media-mañana-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <select data-meal="media-mañana" class="food-select">
+              <select data-meal="media-mañana" class="food-select" style="width: 13em;">
                   <option value="">Selecciona Alimento</option>
                 <option value="" class="red">VALOR POR 100 g</option>
                 <option value="aceituna">Aceituna 7=50g[1g]</option>
@@ -117,17 +128,17 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="media-mañana" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="media-mañana" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" />
+              <input data-meal="media-mañana" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" style="font-size: 1.2em;"/>
               <button data-action="add" data-meal="media-mañana">Añadir</button>
             </div>
-          </div>
+          </div> <h2 class="hr"></h2>
 
           <!-- Almuerzo -->
           <div class="meal" data-meal="almuerzo">
-            <h3>Almuerzo</h3>
+            <h3><i>ALMUERZO</i></h3>
             <div class="items" id="almuerzo-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <select data-meal="almuerzo" class="food-select">
+              <select data-meal="almuerzo" class="food-select" style="width: 13em;">
                 <option value="">Selecciona Alimento</option>
                  <option value="" class="red">VALOR POR 100 g</option>
                 
@@ -143,17 +154,16 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="almuerzo" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="almuerzo" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" />
+              <input data-meal="almuerzo" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
               <button data-action="add" data-meal="almuerzo">Añadir</button>
             </div>
-          </div>
-
+          </div><h2 class="hr"></h2>
           <!-- Media tarde -->
           <div class="meal" data-meal="media-tarde">
-            <h3>Media tarde</h3>
+            <h3><i>MEDIA TARDE</i></h3>
             <div class="items" id="media-tarde-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <select data-meal="media-tarde" class="food-select">
+              <select data-meal="media-tarde" class="food-select" style="width: 13em;">
                 <option value="">Selecciona Alimento</option>
                 <option value="" class="red">VALOR POR 100 g</option>
                 <option value="aceituna">Aceituna 7=50g[1g]</option>
@@ -175,17 +185,17 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="media-tarde" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="media-tarde" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" />
+              <input data-meal="media-tarde" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
               <button data-action="add" data-meal="media-tarde">Añadir</button>
             </div>
-          </div>
+          </div><h2 class="hr"></h2>
 
           <!-- Cena -->
           <div class="meal" data-meal="cena">
-            <h3>Cena</h3>
+            <h3><i>CENA</i></h3>
             <div class="items" id="cena-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <select data-meal="cena" class="food-select">
+              <select data-meal="cena" class="food-select" style="width: 13em;">
                 <option value="">Selecciona Alimento</option>
                 <option value="" class="red">VALOR POR 100 g</option>
                 <option value="aceituna">Aceituna 7=50g[1g]</option>
@@ -207,10 +217,10 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="cena" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="cena" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" />
+              <input data-meal="cena" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
               <button data-action="add" data-meal="cena">Añadir</button>
             </div>
-          </div>
+          </div><h2 class="hr"></h2>
         </div>
       </div>
 
@@ -218,7 +228,7 @@
         <div class="totals">
           <div class="summary">
             <div>
-              <div class="small">Total consumido</div>
+              <div class="small">Total Consumido</div>
               <div id="totalProt" class="big">0 g</div>
             </div>
             <div style="text-align:right">
@@ -232,7 +242,21 @@
       </aside>
     </div>
 
-    <footer class="small">Guarda tus datos localmente en el navegador.</footer>
+      <footer>
+      <div class="footer-content">
+        <h3>Web Salud</h3>
+        <hr><br>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Noviembre || 
+          <a href="../../index.html"> IR A INICIO</a>
+        </p>
+        <h2><div class="semana-info" id="semana-info"></div></h2>
+        <button id="info-button" class="boton">SEMANA / DIA</button>
+      </div>
+    </footer>
+    <br><br><br><br>
   </div>
 
   <script>
@@ -360,5 +384,7 @@
     bindFoodSelects();
     render();
   </script>
+  <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
+   <script src="../../JS/numeroDeSemana.js"></script>
 </body>
 </html>

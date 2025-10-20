@@ -142,11 +142,13 @@ footer {
 .footer-content h3 {
   font-size: 1.8em;
   margin: 0.5em 0;
+  color: white;
 }
 
 .footer-content p {
   font-size: 0.9em;
   line-height: 1.5;
+  color: white;
 }
 
 .socials {
@@ -169,6 +171,7 @@ footer {
 .footer-bottom {
   margin-top: 1em;
   font-size: 0.8em;
+  color: white;
 }
 
 .footer-bottom a {

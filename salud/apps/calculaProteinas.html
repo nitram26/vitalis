@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Proteínas Diarias</title>
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --accent: #2b6cb0;
+    --muted: #6b7280;
+    --success: #16a34a;
+    font-family: "Inter", system-ui, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(180deg, #e8edff 0%, var(--bg) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.1);
+    padding: 24px;
+    width: 520px;
+    text-align: center;
+  
+  }
+
+  p {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    text-align: left;
+    margin: 8px 0 4px;
+    font-size: 13px;
+    color: var(--muted);
+  }
+
+  input, select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  button:hover {
+    background: #2563eb;
+  }
+
+  .resultado {
+    margin-top: 18px;
+    background: #f0f9ff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .resultado strong {
+    color: var(--success);
+    font-size: 18px;
+  }
+
+  .detalle {
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 8px;
+  }
+
+  .h1{
+    color: brown;
+    font-size: 1.5EM;
+  }
+  .h2{
+    color: black;
+    font-size: 1.5em;
+  }
+  .h3{
+    color: white;
+    font-size: 1.5em;
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1 class="h1">CALCULADORA DE PROTEÍNAS</h1>
+    <H2  class="h2"> <i>Calcula tu requerimiento diario</i></H2>
+
+    <label class="h1">Peso corporal (kg)</label>
+    <input class="h2" id="peso" type="number" placeholder="Ej. 70" min="30" max="200" />
+
+    <label class="h1">Edad</label>
+    <input class="h2" id="edad" type="number" placeholder="Ej. 60" min="10" max="100" />
+
+    <label class="h1">Sexo</label>
+    <select id="sexo"  class="h2">
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+    </select>
+
+    <label class="h1">Nivel de actividad</label>
+    <select id="actividad"  class="h2">
+      <option value="sedentario">Sedentario (poca actividad)</option>
+      <option value="moderado">Activo moderado</option>
+      <option value="entrenamiento">Entrena regularmente</option>
+      <option value="intenso">Entrenamiento intenso</option>
+    </select>
+
+    <button onclick="calcular()"  class="h3">Calcular Requerimiento</button>
+
+    <div id="resultado" class="resultado" style="display:none;">
+      <div>Tu requerimiento diario aproximado es:</div>
+      <strong id="total"></strong>
+      <div class="detalle" id="detalle"></div>
+    </div>
+  </div>
+
+  <script>
+    function calcularProteinas({ peso, edad, sexo, actividad }) {
+      let factorActividad = 1.0;
+      switch (actividad) {
+        case 'sedentario': factorActividad = 1.0; break;
+        case 'moderado': factorActividad = 1.2; break;
+        case 'entrenamiento': factorActividad = 1.8; break;
+        case 'intenso': factorActividad = 2.0; break;
+      }
+
+      let factor = factorActividad;
+      if (edad > 50) factor += 0.2;
+      if (sexo === 'hombre') factor += 0.1;
+
+      const total = peso * factor;
+      return { total: Math.round(total), factor };
+    }
+
+    function calcular() {
+      const peso = parseFloat(document.getElementById('peso').value);
+      const edad = parseInt(document.getElementById('edad').value);
+      const sexo = document.getElementById('sexo').value;
+      const actividad = document.getElementById('actividad').value;
+
+      if (!peso || !edad) {
+        alert('Por favor, completa todos los campos.');
+        return;
+      }
+
+      const resultado = calcularProteinas({ peso, edad, sexo, actividad });
+      document.getElementById('total').textContent = `${resultado.total} g de proteína`;
+      document.getElementById('detalle').textContent =
+        `Factor aplicado: ${resultado.factor.toFixed(2)} g/kg`;
+      document.getElementById('resultado').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
