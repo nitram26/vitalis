@@ -1736,14 +1736,14 @@
       </thead>
       <tbody>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td class="warning"></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
+              <td>19</td> <!--Fecha   -->
+              <td>100</td> <!--Glucosa (mg/dL)  -->
+              <td>115</td> <!--Presión Sistólica (mmHg) -->
+              <td>65</td> <!--Presión Diastólica (mmHg)  -->
+              <td>47</td> <!-- Pulso (bpm)  -->
+              <td>36.3</td> <!-- Temperatura (°C)  -->
+              <td>99</td> <!--Oxigenación (%)  -->
+              <td>58</td> <!-- Peso (kg)  -->
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
@@ -1917,25 +1917,25 @@
         </table>
           <div class="graf">
             <div class="card">
-                <h2 class="cita">Gráfica de PRESIÓN mes de Octubre </h2>
-                <!-- // cambiar nombre del mes -->
+                <h2 class="cita">Gráfica de Glucosa Octubre </h2>
+                <!-- // cambiar nombre del mes 1-->
               <canvas id="MedicionesChart10"></canvas>
-              <!-- cambiar numero del mes -->
+              <!-- cambiar numero del mes 1-->
             </div>
           
             <script>
               const ctxOctubre = document.getElementById
-              //cambiar nombre del mes
+              //cambiar nombre del mes 1
               ('MedicionesChart10').getContext('2d');
-              // cambiar número del mes
+              // cambiar número del mes 1
            
           
               const data10 = {
-                // cambiar numero del mes
-                labels: ['04',  ], // Añade más fechas aquí
+                // cambiar numero del mes 1
+                labels: ['19', 26 ], // Añade más fechas aquí
                 datasets: [{
                   label: 'Mediciones',
-                  data: [85,  ], // Añade más valores aquí
+                  data: [100, 95 ], // Añade más valores aquí
                   borderColor: '#8884d8',
                   backgroundColor: 'rgba(136, 132, 216, 0.2)',
                   tension: 0.3,
@@ -1966,10 +1966,10 @@
                   y: {
                     title: {
                       display: true,
-                      text: 'PRESIÓN SISTÓLICA (mmHg)',
+                      text: 'Glucosa (mg/dL)',
                     },
                     beginAtZero: false,
-                    min:110,
+                    min:60,
                   },
                 },
               };
@@ -1984,7 +1984,7 @@
               });
             </script>
           
-          </div>   
+          </div>     
       
       </tbody>
   </table>
