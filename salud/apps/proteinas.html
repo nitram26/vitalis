@@ -1,54 +1,192 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../../style.css">
-  <title>Registro  de proteínas</title>
+  <title>Registro de proteínas</title>
   <style>
-  .hr {
-  height: 2px;             /* grosor de la línea */
-  background-color: brown; /* color deseado */
-}
-    select{
+    .hr {
+      height: 2px;
+      /* grosor de la línea */
+      background-color: brown;
+      /* color deseado */
+    }
+
+    select {
       background-color: blanchedalmond;
       font-size: 1.4em;
       width: 20em;
     }
-    .red{
-        color: red;
+
+    .red {
+      color: red;
     }
-    :root{
-      --bg:#f6f7fb; --card:#ffffff; --accent:#2b6cb0; --muted:#6b7280; --success:#16a34a;
-      --danger:#dc2626; --glass: rgba(255,255,255,0.6);
+
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --accent: #2b6cb0;
+      --muted: #6b7280;
+      --success: #16a34a;
+      --danger: #dc2626;
+      --glass: rgba(255, 255, 255, 0.6);
       font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    html,body{height:100%; margin:0; background:linear-gradient(180deg,#eef2ff 0%,var(--bg) 100%);}
-    .app{max-width:1200px; margin:28px auto; padding:22px;}
-    header{display:flex;gap:16px;align-items:center;}
-    h1{margin:0;font-size:20px;color:#0f172a}
-    .controls{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
-    input[type=number], select{width:160px;padding:8px;border-radius:8px;border:1px solid #e6e9ef}
-    button{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
-    button.ghost{background:transparent;color:var(--accent);border:1px solid rgba(43,108,176,0.15)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px;margin-top:18px; border: blue double 5px; border-radius: 1em;}
-    .card{background:var(--card);border-radius:12px;padding:14px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
-    .meals{display:grid;gap:12px}
-    .meal{border:1px dashed rgba(15,23,42,0.04);padding:10px;border-radius:10px}
-    .meal h3{margin:0 0 8px 0;font-size:15px}
-    .items{display:flex;flex-direction:column;gap:6px}
-    .item{display:flex;justify-content:space-between;align-items:center;padding:6px 8px;border-radius:8px;background:var(--glass)}
-    .item .meta{font-size:13px;color:var(--muted)}
-    .progress{height:12px;background:#e6eef9;border-radius:8px;overflow:hidden}
-    .bar{height:100%;background:linear-gradient(90deg,var(--accent),#5eead4);width:0%}
-    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:12px}
-    .row{display:flex;gap:8px;align-items:center}
-    .small{font-size:20px;color:var(--muted)}
-    /* responsive */
-    @media (max-width:880px){.grid{grid-template-columns:1fr;}.app{padding:12px}}
 
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: linear-gradient(180deg, #eef2ff 0%, var(--bg) 100%);
+    }
+
+    .app {
+      max-width: 1200px;
+      margin: 28px auto;
+      padding: 22px;
+    }
+
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 20px;
+      color: #0f172a
+    }
+
+    .controls {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-top: 14px;
+      flex-wrap: wrap
+    }
+
+    input[type=number],
+    select {
+      width: 160px;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #e6e9ef
+    }
+
+    button {
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer
+    }
+
+    button.ghost {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid rgba(43, 108, 176, 0.15)
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 18px;
+      margin-top: 18px;
+      border: blue double 5px;
+      border-radius: 1em;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 12px;
+      padding: 14px;
+      box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06)
+    }
+
+    .meals {
+      display: grid;
+      gap: 12px
+    }
+
+    .meal {
+      border: 1px dashed rgba(15, 23, 42, 0.04);
+      padding: 10px;
+      border-radius: 10px
+    }
+
+    .meal h3 {
+      margin: 0 0 8px 0;
+      font-size: 15px
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 6px
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 6px 8px;
+      border-radius: 8px;
+      background: var(--glass)
+    }
+
+    .item .meta {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .progress {
+      height: 12px;
+      background: #e6eef9;
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), #5eead4);
+      width: 0%
+    }
+
+    footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      align-items: center
+    }
+
+    .small {
+      font-size: 20px;
+      color: var(--muted)
+    }
+
+    /* responsive */
+    @media (max-width:880px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .app {
+        padding: 12px
+      }
+    }
   </style>
 </head>
+
 <body>
   <div class="app">
     <header>
@@ -75,7 +213,7 @@
               <select data-meal="desayuno" class="food-select" style="width: 14em;">
                 <option value="">Selecciona Alimento</option>
                 <option value="" class="red">PORCIÓN DE 100 g</option>
-                 <option value="aceituna">Aceituna 7=50g [2g]</option>
+                <option value="aceituna">Aceituna 7=50g [2g]</option>
                 <option value="atún">Atún [25g]</option>
                 <option value="avenaHojuela">Avena Hojuelas 4=25g(3g)</option>
                 <option value="carneRes">Carne Res (30g)</option>
@@ -94,10 +232,12 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="desayuno" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="desayuno" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
+              <input data-meal="desayuno" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"
+                style="font-size: 1.2em;" />
               <button data-action="add" data-meal="desayuno">Añadir</button>
             </div>
-          </div> <h2 class="hr"></h2>
+          </div>
+          <h2 class="hr"></h2>
 
           <!-- Media mañana -->
           <div class="meal" data-meal="media-mañana">
@@ -105,7 +245,7 @@
             <div class="items" id="media-mañana-list"></div>
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
               <select data-meal="media-mañana" class="food-select" style="width: 14em;">
-                  <option value="">Selecciona Alimento</option>
+                <option value="">Selecciona Alimento</option>
                 <option value="" class="red">PORCIÓN DE 100 g</option>
                 <option value="aceituna">Aceituna 7=50g 7=50g[1g]</option>
                 <option value="atún">Atún [25g]</option>
@@ -116,21 +256,24 @@
                 <option value="lecheAlmendra">Leche Almendra 300g(3g)</option>
                 <option value="lecheAvena">Leche Avena 300g(6g)</option>
                 <option value="lecheEntera">Leche Entera 300g(10g)</option>
-                 <option value="panIntegral">Pan Integral 2=50g (5g)</option>
+                <option value="panIntegral">Pan Integral 2=50g (5g)</option>
                 <option value="pistacho">Pistachos 18=25g(5g)</option>
                 <option value="pescado">Pescado (20g)</option>
                 <option value="pollo">Pollo 200g(60g)</option>
                 <option value="quesoFresco">Queso Fresco (18g)</option>
-                <option value="yogurGriego">Yogur Griego  200g(20g)</option>
+                <option value="yogurGriego">Yogur Griego 200g(20g)</option>
                 <option value="yogurNatural">Yogur Natural 200g(10g)</option>
                 <option value="yuca">Yuca (2g)</option>
                 <option value="otro">Otro (escribir)</option>
               </select>
-              <input data-meal="media-mañana" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="media-mañana" class="food-prot" type="number" min="0" placeholder="Proteínas (g)" style="font-size: 1.2em;"/>
+              <input data-meal="media-mañana" class="food-name" placeholder="Alimento personalizado"
+                style="display:none" />
+              <input data-meal="media-mañana" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"
+                style="font-size: 1.2em;" />
               <button data-action="add" data-meal="media-mañana">Añadir</button>
             </div>
-          </div> <h2 class="hr"></h2>
+          </div>
+          <h2 class="hr"></h2>
 
           <!-- Almuerzo -->
           <div class="meal" data-meal="almuerzo">
@@ -139,9 +282,9 @@
             <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
               <select data-meal="almuerzo" class="food-select" style="width: 14em;">
                 <option value="">Selecciona Alimento</option>
-                 <option value="" class="red">PORCIÓN DE 100 g</option>
-                
-                 <option value="arrozIntegral">Arroz Integral 50g [1g]</option>
+                <option value="" class="red">PORCIÓN DE 100 g</option>
+
+                <option value="arrozIntegral">Arroz Integral 50g [1g]</option>
                 <option value="atún">Atún [25g]</option>
                 <option value="carneRes">Carne Res (30g)</option>
                 <option value="espinaca">Espinacas (3g)</option>
@@ -154,10 +297,12 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="almuerzo" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="almuerzo" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
+              <input data-meal="almuerzo" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"
+                style="font-size: 1.2em;" />
               <button data-action="add" data-meal="almuerzo">Añadir</button>
             </div>
-          </div><h2 class="hr"></h2>
+          </div>
+          <h2 class="hr"></h2>
           <!-- Media tarde -->
           <div class="meal" data-meal="media-tarde">
             <h3><i>MEDIA TARDE</i></h3>
@@ -175,20 +320,23 @@
                 <option value="lecheAlmendra">Leche Almendra 300g( 3g)</option>
                 <option value="lecheAvena">Leche Avena 300g(6g)</option>
                 <option value="lecheEntera">Leche Entera 300g(10g)</option>
-                 <option value="panIntegral">Pan Integral 2=50g (5g)</option>
+                <option value="panIntegral">Pan Integral 2=50g (5g)</option>
                 <option value="pescado">Pescado (20g)</option>
                 <option value="pollo">Pollo (30g)</option>
                 <option value="quesoFresco">Queso Fresco (18g)</option>
-                <option value="yogurGriego">Yogur Griego  200g(20g)</option>
+                <option value="yogurGriego">Yogur Griego 200g(20g)</option>
                 <option value="yogurNatural">Yogur Natural 200(10g)</option>
                 <option value="yuca">Yuca (2g)</option>
                 <option value="otro">Otro (escribir)</option>
               </select>
-              <input data-meal="media-tarde" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="media-tarde" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
+              <input data-meal="media-tarde" class="food-name" placeholder="Alimento personalizado"
+                style="display:none" />
+              <input data-meal="media-tarde" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"
+                style="font-size: 1.2em;" />
               <button data-action="add" data-meal="media-tarde">Añadir</button>
             </div>
-          </div><h2 class="hr"></h2>
+          </div>
+          <h2 class="hr"></h2>
 
           <!-- Cena -->
           <div class="meal" data-meal="cena">
@@ -207,7 +355,7 @@
                 <option value="lecheAlmendra">Leche Almendra 300g( 3g)</option>
                 <option value="lecheAvena">Leche Avena 300g(6g)</option>
                 <option value="lecheEntera">Leche Entera 300g(10g)</option>
-                 <option value="panIntegral">Pan Integral 2=50g (5g)</option>
+                <option value="panIntegral">Pan Integral 2=50g (5g)</option>
                 <option value="pescado">Pescado (20g)</option>
                 <option value="pollo">Pollo 200g(60g)</option>
                 <option value="quesoFresco">Queso Fresco (18g)</option>
@@ -217,10 +365,12 @@
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="cena" class="food-name" placeholder="Alimento personalizado" style="display:none" />
-              <input data-meal="cena" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"  style="font-size: 1.2em;"/>
+              <input data-meal="cena" class="food-prot" type="number" min="0" placeholder="Proteínas (g)"
+                style="font-size: 1.2em;" />
               <button data-action="add" data-meal="cena">Añadir</button>
             </div>
-          </div><h2 class="hr"></h2>
+          </div>
+          <h2 class="hr"></h2>
         </div>
       </div>
 
@@ -236,23 +386,27 @@
               <div id="metaProt" class="big">100 </div>
             </div>
           </div>
-          <div class="progress" title="Progreso hacia la meta"><div id="bar" class="bar"></div></div>
+          <div class="progress" title="Progreso hacia la meta">
+            <div id="bar" class="bar"></div>
+          </div>
           <div id="perMealBreakdown" style="display:grid;gap:8px"></div>
         </div>
       </aside>
     </div>
 
-      <footer>
+    <footer>
       <div class="footer-content">
         <h3>Web Salud</h3>
         <hr><br>
       </div>
       <div class="footer-bottom">
         <p>
-          &copy; 2025 Noviembre || 
+          &copy; 2025 Noviembre ||
           <a href="../../index.html"> IR A INICIO</a>
         </p>
-        <h2><div class="semana-info" id="semana-info"></div></h2>
+        <h2>
+          <div class="semana-info" id="semana-info"></div>
+        </h2>
         <button id="info-button" class="boton">SEMANA / DIA</button>
       </div>
     </footer>
@@ -260,133 +414,134 @@
   </div>
 
   <script>
-    const MEALS = ['desayuno','media-mañana','almuerzo','media-tarde','cena'];
+    const MEALS = ['desayuno', 'media-mañana', 'almuerzo', 'media-tarde', 'cena'];
     const stateKey = 'registro_proteinas_v2';
 
-    function qs(sel,el=document){return el.querySelector(sel)}
-    function qsa(sel,el=document){return Array.from(el.querySelectorAll(sel))}
+    function qs(sel, el = document) { return el.querySelector(sel) }
+    function qsa(sel, el = document) { return Array.from(el.querySelectorAll(sel)) }
 
-    function loadState(){const raw=localStorage.getItem(stateKey);if(!raw)return defaultState();try{return JSON.parse(raw);}catch(e){return defaultState();}}
-    function defaultState(){const date=new Date().toISOString().slice(0,10);const meals={};MEALS.forEach(m=>meals[m]=[]);return {date,target:100,meals};}
-    let state=loadState();
-    function saveState(){localStorage.setItem(stateKey,JSON.stringify(state));}
+    function loadState() { const raw = localStorage.getItem(stateKey); if (!raw) return defaultState(); try { return JSON.parse(raw); } catch (e) { return defaultState(); } }
+    function defaultState() { const date = new Date().toISOString().slice(0, 10); const meals = {}; MEALS.forEach(m => meals[m] = []); return { date, target: 100, meals }; }
+    let state = loadState();
+    function saveState() { localStorage.setItem(stateKey, JSON.stringify(state)); }
 
-    const targetInput=qs('#target'),dateInput=qs('#date'),totalProt=qs('#totalProt'),metaProt=qs('#metaProt'),bar=qs('#bar'),breakdown=qs('#perMealBreakdown');
+    const targetInput = qs('#target'), dateInput = qs('#date'), totalProt = qs('#totalProt'), metaProt = qs('#metaProt'), bar = qs('#bar'), breakdown = qs('#perMealBreakdown');
 
-    function bindControls(){
-      targetInput.value=state.target;dateInput.value=state.date;metaProt.textContent=state.target+' g';
-      targetInput.addEventListener('change',e=>{state.target=Number(e.target.value)||0;metaProt.textContent=state.target+' g';render();saveState();});
-      dateInput.addEventListener('change',e=>{state.date=e.target.value;saveState();});
-      document.getElementById('export').addEventListener('click',exportCSV);
-      document.getElementById('clear').addEventListener('click',()=>{if(confirm('¿Limpiar los datos del día?')){state=defaultState();state.date=dateInput.value;saveState();render();}});
-      qsa('button[data-action="add"]').forEach(b=>b.addEventListener('click',onAdd));
+    function bindControls() {
+      targetInput.value = state.target; dateInput.value = state.date; metaProt.textContent = state.target + ' g';
+      targetInput.addEventListener('change', e => { state.target = Number(e.target.value) || 0; metaProt.textContent = state.target + ' g'; render(); saveState(); });
+      dateInput.addEventListener('change', e => { state.date = e.target.value; saveState(); });
+      document.getElementById('export').addEventListener('click', exportCSV);
+      document.getElementById('clear').addEventListener('click', () => { if (confirm('¿Limpiar los datos del día?')) { state = defaultState(); state.date = dateInput.value; saveState(); render(); } });
+      qsa('button[data-action="add"]').forEach(b => b.addEventListener('click', onAdd));
     }
-// VALORES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // VALORES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     const alimentosProteicos = {
-        aceituna: 1, // por 50 g
-        arrozIntegral: 1, // por 50 g
-        atún: 25, // por 100 g
-        avenaHojuela: 3, // por 25 g
-        carneRes: 30, // por 100 g
-        espinaca: 3, // por 100 g
-        huevo: 6, // por 3 huevos (~150 g)
-        leche: 10, // por 300 ml
-        lecheAlmendra: 3, // por 300 ml
-        lecheAvena: 6, // por 300 ml
-        lecheEntera: 10, // por 300 ml
-        lenteja: 18, // por 200 g cocida
-        menestras: 18, // por 200 g cocida
-        panIntegral:5, // por 2 rebanadas (~50 g)
-        pescado: 20, // por 100 g
-        pistacho: 5, // por 25 g
-        pollo: 30, // por 100 g
-        quesoFresco: 18, // por 100 g
-        yogurGriego: 20, // por 200 g
-        yogurNatural: 10, // por 200 g
-        yuca: 2, // por 100 g
+      aceituna: 1, // por 50 g
+      arrozIntegral: 1, // por 50 g
+      atún: 25, // por 100 g
+      avenaHojuela: 3, // por 25 g
+      carneRes: 30, // por 100 g
+      espinaca: 3, // por 100 g
+      huevo: 6, // por 3 huevos (~150 g)
+      leche: 10, // por 300 ml
+      lecheAlmendra: 3, // por 300 ml
+      lecheAvena: 6, // por 300 ml
+      lecheEntera: 10, // por 300 ml
+      lenteja: 18, // por 200 g cocida
+      menestras: 18, // por 200 g cocida
+      panIntegral: 5, // por 2 rebanadas (~50 g)
+      pescado: 20, // por 100 g
+      pistacho: 5, // por 25 g
+      pollo: 30, // por 100 g
+      quesoFresco: 18, // por 100 g
+      yogurGriego: 20, // por 200 g
+      yogurNatural: 10, // por 200 g
+      yuca: 2, // por 100 g
     };
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-    function bindFoodSelects(){
-      qsa('.food-select').forEach(sel=>{
-        sel.addEventListener('change',e=>{
-          const meal=e.target.dataset.meal;
-          const parent=e.target.parentElement;
-          const nameInput=parent.querySelector('.food-name');
-          const protInput=parent.querySelector('.food-prot');
-          const selected=e.target.value;
-          if(selected==='otro'||selected===''){nameInput.style.display='inline-block';nameInput.value='';protInput.value='';}
-          else{nameInput.style.display='none';nameInput.value=capitalize(selected);protInput.value=alimentosProteicos[selected]||'';}
+    // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    function bindFoodSelects() {
+      qsa('.food-select').forEach(sel => {
+        sel.addEventListener('change', e => {
+          const meal = e.target.dataset.meal;
+          const parent = e.target.parentElement;
+          const nameInput = parent.querySelector('.food-name');
+          const protInput = parent.querySelector('.food-prot');
+          const selected = e.target.value;
+          if (selected === 'otro' || selected === '') { nameInput.style.display = 'inline-block'; nameInput.value = ''; protInput.value = ''; }
+          else { nameInput.style.display = 'none'; nameInput.value = capitalize(selected); protInput.value = alimentosProteicos[selected] || ''; }
         });
       });
     }
 
-    function capitalize(str){return str.charAt(0).toUpperCase()+str.slice(1);}
+    function capitalize(str) { return str.charAt(0).toUpperCase() + str.slice(1); }
 
-    function onAdd(e){
-      const meal=e.target.dataset.meal;
-      const parent=e.target.parentElement;
-      const name=parent.querySelector('.food-name').value.trim()||'—';
-      const prot=Number(parent.querySelector('.food-prot').value)||0;
-      if(prot<=0){alert('Introduce al menos 1 g de proteína.');return;}
-      const item={id:Date.now(),name,prot};
+    function onAdd(e) {
+      const meal = e.target.dataset.meal;
+      const parent = e.target.parentElement;
+      const name = parent.querySelector('.food-name').value.trim() || '—';
+      const prot = Number(parent.querySelector('.food-prot').value) || 0;
+      if (prot <= 0) { alert('Introduce al menos 1 g de proteína.'); return; }
+      const item = { id: Date.now(), name, prot };
       state.meals[meal].push(item);
-      parent.querySelector('.food-name').value='';
-      parent.querySelector('.food-prot').value='';
-      parent.querySelector('.food-select').value='';
-      saveState();render();
+      parent.querySelector('.food-name').value = '';
+      parent.querySelector('.food-prot').value = '';
+      parent.querySelector('.food-select').value = '';
+      saveState(); render();
     }
 
-    function render(){
-      MEALS.forEach(meal=>{
-        const container=qs(`#${meal}-list`);
-        container.innerHTML='';
-        state.meals[meal].forEach(it=>{
-          const div=document.createElement('div');
-          div.className='item';
-          div.innerHTML=`<div><div class="meta">${escapeHtml(it.name)}</div></div>
+    function render() {
+      MEALS.forEach(meal => {
+        const container = qs(`#${meal}-list`);
+        container.innerHTML = '';
+        state.meals[meal].forEach(it => {
+          const div = document.createElement('div');
+          div.className = 'item';
+          div.innerHTML = `<div><div class="meta">${escapeHtml(it.name)}</div></div>
           <div style="display:flex;gap:8px;align-items:center">
           <div class="meta">${it.prot} g</div>
           <button data-action="del" data-meal="${meal}" data-id="${it.id}" class="ghost">✕</button></div>`;
           container.appendChild(div);
         });
       });
-      qsa('button[data-action="del"]').forEach(b=>b.addEventListener('click',onDelete));
-      const totalsPerMeal={};let total=0;
-      MEALS.forEach(m=>{const s=state.meals[m].reduce((a,b)=>a+b.prot,0);totalsPerMeal[m]=s;total+=s;});
-      totalProt.textContent=total+' g';
-      const perc=Math.min(100,(total/state.target)*100);
-      bar.style.width=perc+'%';
-      breakdown.innerHTML='';
-      MEALS.forEach(m=>{
-        const div=document.createElement('div');
-        div.className='row small';
-        div.textContent=capitalize(m)+': '+totalsPerMeal[m]+' g';
+      qsa('button[data-action="del"]').forEach(b => b.addEventListener('click', onDelete));
+      const totalsPerMeal = {}; let total = 0;
+      MEALS.forEach(m => { const s = state.meals[m].reduce((a, b) => a + b.prot, 0); totalsPerMeal[m] = s; total += s; });
+      totalProt.textContent = total + ' g';
+      const perc = Math.min(100, (total / state.target) * 100);
+      bar.style.width = perc + '%';
+      breakdown.innerHTML = '';
+      MEALS.forEach(m => {
+        const div = document.createElement('div');
+        div.className = 'row small';
+        div.textContent = capitalize(m) + ': ' + totalsPerMeal[m] + ' g';
         breakdown.appendChild(div);
       });
     }
 
-    function onDelete(e){
-      const meal=e.target.dataset.meal,id=Number(e.target.dataset.id);
-      state.meals[meal]=state.meals[meal].filter(x=>x.id!==id);
-      saveState();render();
+    function onDelete(e) {
+      const meal = e.target.dataset.meal, id = Number(e.target.dataset.id);
+      state.meals[meal] = state.meals[meal].filter(x => x.id !== id);
+      saveState(); render();
     }
 
-    function exportCSV(){
-      const rows=[['Fecha','Comida','Alimento','Proteínas (g)']];
-      MEALS.forEach(m=>state.meals[m].forEach(it=>rows.push([state.date,m,it.name,it.prot])));
-      const csv=rows.map(r=>r.join(',')).join('\n');
-      const blob=new Blob([csv],{type:'text/csv'});
-      const a=document.createElement('a');
-      a.href=URL.createObjectURL(blob);a.download='registro_proteinas.csv';a.click();
+    function exportCSV() {
+      const rows = [['Fecha', 'Comida', 'Alimento', 'Proteínas (g)']];
+      MEALS.forEach(m => state.meals[m].forEach(it => rows.push([state.date, m, it.name, it.prot])));
+      const csv = rows.map(r => r.join(',')).join('\n');
+      const blob = new Blob([csv], { type: 'text/csv' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = 'registro_proteinas.csv'; a.click();
     }
 
-    function escapeHtml(str){return str.replace(/[&<>'"]/g,t=>({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[t]));}
+    function escapeHtml(str) { return str.replace(/[&<>'"]/g, t => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "'": "&#39;", '"': "&quot;" }[t])); }
 
     bindControls();
     bindFoodSelects();
     render();
   </script>
   <!-- +++++++++++++++++++++++++++++++++++++++++++ -->
-   <script src="../../JS/numeroDeSemana.js"></script>
+  <script src="../../JS/numeroDeSemana.js"></script>
 </body>
+
 </html>
