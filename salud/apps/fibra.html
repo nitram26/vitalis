@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="../../style.css">
+    <title>Control de Fibra </title>
+    <style>
+    
+        :root {
+            --bg: #f6f7fb;
+            --card: #ffffff;
+            --accent: #0f766e;
+            --muted: #6b7280
+        }
+
+        body {
+            font-family: Inter, system-ui, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+            background: var(--bg);
+            margin: 0;
+            padding: 20px;
+            color: #111
+        }
+
+        .container {
+            max-width: 980px;
+            margin: 0 auto
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 12px;
+            padding: 16px;
+            box-shadow: 0 1px 3px rgba(16, 24, 40, .04);
+        }
+
+        form {
+            display: grid;
+            grid-template-columns: 1fr 96px 96px 96px;
+            gap: 10px;
+            align-items: end
+        }
+
+        label {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        select,
+        input[type=number],
+        input[type=date] {
+            width: 100%;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #e6e9ee
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 10px;
+            cursor: pointer
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 12px;
+            margin-top: 12px
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse
+        }
+
+        th,
+        td {
+            padding: 8px;
+            border-bottom: 1px solid #f1f3f5;
+            text-align: left;
+            font-size: 14px
+        }
+
+        .totals {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap
+        }
+
+        .pill {
+            background: #f3faf9;
+            padding: 10px;
+            border-radius: 10px;
+            min-width: 150px
+        }
+
+        .bar {
+            height: 12px;
+            background: #e6f3f0;
+            border-radius: 8px;
+            overflow: hidden
+        }
+
+        .bar>i {
+            display: block;
+            height: 100%;
+            background: var(--accent);
+            width: 0
+        }
+
+        footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px
+        }
+
+        @media(max-width:760px) {
+            form {
+                grid-template-columns: 1fr 1fr
+            }
+
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.seleccionar{
+    width: 70%;
+}
+
+.fibras{
+    gap: 1em;
+    width: 100%;
+}
+
+footer{
+    color: white;
+}
+    </style>
+</head>
+
+<body>
+     <p id="alInicio" class="principio"></p>
+    <header >
+      <div class="container fibras">
+   
+
+            <p class="logo">Consumo de Fibra</p>
+            <!-- ****************************************************** -->
+            <a href="#alInicio">
+                <img src="../../media/CERVERA.png" alt="" class="logoC" />
+            </a>
+            <a href="../../index.html" class="nombre">INICIO</a>
+      
+      </div>
+    </header> <br><br><br><br>
+
+    <!-- ****************************************************************** -->
+ 
+    <div class="">
+      
+            <div class="card" style="padding:10px 14px;display:flex;align-items:center;gap:12px">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#0f766e"
+                        stroke-width="1.2" fill="#e6f7f5" />
+                </svg>
+                <div>
+                    <h1>Control de fibra (soluble / insoluble)</h1>
+                    <div style="font-size:13px;color:var(--muted)">Registro de fibra soluble e insoluble por día.</div>
+                </div>
+            </div>
+      
+
+        <div class="card">
+            <form id="entryForm">
+                <div>
+                    <label for="food">ALIMENTO </label>
+                    <select id="food" class="seleccionar"></select>
+                    <button id="addBtn" type="submit">Agregar</button>
+                </div>
+                <div>
+                    <label for="grams">Gramos (g)</label>
+                    <input id="grams" type="number" min="1" value="100" required />
+                   
+                </div>
+                <div>
+                    <label for="date">Fecha</label>
+                    <input id="date" type="date" />
+                </div>
+                <div style="display:flex;gap:8px">
+                    
+                    <button id="clearBtn" type="button" style="background:#ef4444">Borrar</button>
+                </div>
+            </form>
+
+            <div class="grid">
+                <div class="card" style="padding:12px;">
+                    <h3 style="margin:0 0 8px 0">Entradas</h3>
+                    <table id="entriesTable">
+                        <thead>
+                            <tr>
+                                <th>Alimento</th>
+                                <th>g</th>
+                                <th>Soluble (g)</th>
+                                <th>Insoluble (g)</th>
+                                <th>
+
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <div style="margin-top:8px;display:flex;gap:8px">
+                        <button id="exportCSV" style="background:#0ea5a4">Exportar CSV</button>
+                        <button id="clearDay" style="background:#f59e0b">Borrar día</button>
+                    </div>
+                </div>
+
+                <div class="card" style="padding:12px;">
+                    <h3 style="margin:0 0 8px 0">Totales — <span id="showDate"></span></h3>
+                    <div class="totals">
+                        <div class="pill">
+                            <div style="font-size:12px;color:var(--muted)">Fibra soluble</div>
+                            <div id="totalSol" style="font-weight:600;font-size:18px">0 g</div>
+                        </div>
+                        <div class="pill">
+                            <div style="font-size:12px;color:var(--muted)">Fibra insoluble</div>
+                            <div id="totalInsol" style="font-weight:600;font-size:18px">0 g</div>
+                        </div>
+                        <div style="width:100%">
+                            <div style="display:flex;justify-content:space-between;font-size:13px;color:var(--muted)">
+                                <div>Objetivo diario</div>
+                                <div><input id="target" type="number" min="1" value="30"
+                                        style="width:70px;padding:6px;border-radius:6px;border:1px solid #e6e9ee;text-align:right" />
+                                    g</div>
+                            </div>
+                            <div style="margin-top:8px" class="bar"><i id="progressBar"></i></div>
+                            <div style="font-size:13px;color:var(--muted);margin-top:6px">Total fibra: <span
+                                    id="totalAll">0 g</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                Consejo: aumenta la fibra gradualmente, acompáñala con suficiente agua y combina soluble e insoluble.
+                Los datos son aproximados.
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // Base de datos de alimentos (valores por 100 g). Datos aproximados.
+        const FOOD_DB = [
+            { key: '', name: 'Ingrese el nombre del Alimento', soluble: 0, insoluble: 0 },
+            { key: 'aceituna', name: 'Aceitunas 7 unid', soluble: 0.5, insoluble: 2.8, defaultGrams: 50 },
+            { key: 'almendras', name: 'Almendras', soluble: 0.6, insoluble: 11.9 },
+            { key: 'arrozI', name: 'Arroz Integral', soluble: 1.0, insoluble: 2.5 },
+            { key: 'avena', name: 'Avena ', soluble: 4.0, insoluble: 6.6, defaultGrams: 50 },
+            { key: 'atun', name: 'Atún ', soluble: 0.0, insoluble: 0.0 },
+            { key: 'brocoli', name: 'Brócoli (cocido)', soluble: 1.0, insoluble: 2.3 },
+            { key: 'carne', name: 'Res', soluble: 0.0, insoluble: 0.0 },
+            { key: 'cebada', name: 'Cebada (cocida)', soluble: 1.5, insoluble: 2.3 },
+            { key: 'chia', name: 'Semillas de chía', soluble: 4.0, insoluble: 30.4 },
+            { key: 'espinaca', name: 'Espinaca (cruda)', soluble: 0.4, insoluble: 1.8 },
+            { key: 'frijoles', name: 'Frijoles negros (cocidos)', soluble: 2.5, insoluble: 6.2, defaultGrams: 200 },
+            { key: 'huevo', name: 'Huevos', soluble: 0.0, insoluble: 0.0},
+            { key: 'garbanzos', name: 'Garbanzos (cocidos)', soluble: 1.7, insoluble: 5.9, defaultGrams: 200 },
+            { key: 'lecheAlmendra', name: 'Leche de Almendras', soluble: 0.2, insoluble: 0.3, defaultGrams: 300 },
+            { key: 'lecheEntera', name: 'Leche Entera', soluble: 0.0, insoluble: 0.0, defaultGrams: 300 },
+            { key: 'lentejas', name: 'Lentejas (cocidas)', soluble: 2.0, insoluble: 5.9, defaultGrams: 200 },
+            { key: 'linaza', name: 'Semillas de lino (linaza)', soluble: 6.0, insoluble: 21.3 },
+            { key: 'manzana', name: 'Manzana (con cáscara)', soluble: 1.0, insoluble: 1.4 },
+            { key: 'menestras', name: 'Menestras', soluble: 2.0, insoluble: 7.0},
+            { key: 'naranja', name: 'Naranja', soluble: 1.8, insoluble: 0.6 },
+            { key: 'palta', name: 'Aguacate (palta)', soluble: 1.4, insoluble: 5.3 },
+            { key: 'panint', name: 'Pan integral (100g equiv)', soluble: 1.5, insoluble: 6.5, defaultGrams: 50  },
+            { key: 'papa', name: 'Papa (con cáscara, cocida)', soluble: 0.8, insoluble: 1.7 },
+            { key: 'pera', name: 'Pera (con cáscara)', soluble: 1.1, insoluble: 2.0 },
+            { key: 'pescado', name: 'Pescado', soluble: 0.0, insoluble: 0.0 },
+            { key: 'pistacho', name: 'Pistachos', soluble: 1.0, insoluble: 9.3 },
+            { key: 'platano', name: 'Plátano', soluble: 1.0, insoluble: 1.6 },
+            { key: 'pollo', name: 'Pollo', soluble: 0.0, insoluble: 0.0 },
+            { key: 'quesoFresco', name: 'Queso Fresco', soluble: 0.0, insoluble: 0.0 },
+            { key: 'yogurGriego', name: 'Yogur Griego', soluble: 0.0, insoluble: 0.0 },
+            { key: 'yogurNatural', name: 'Yogur natural', soluble: 0.0, insoluble: 0.0 },
+            { key: 'salvado', name: 'Salvado de trigo', soluble: 2.5, insoluble: 40.5 },
+            { key: 'vainita', name: 'Vainita', soluble: 1.0, insoluble: 2.5 },
+            { key: 'yuca', name: 'Yuca', soluble: 0.3, insoluble: 1.5 },
+            { key: 'zanahoria', name: 'Zanahoria (cruda)', soluble: 1.2, insoluble: 1.6 },
+        ];
+
+        // Utilities
+        const $ = id => document.getElementById(id);
+        const todayISO = (d = new Date()) => d.toISOString().slice(0, 10);
+
+        // Elements
+        const foodSel = $('food');
+        const gramsIn = $('grams');
+        const dateIn = $('date');
+        const entriesTableBody = document.querySelector('#entriesTable tbody');
+        const totalSolEl = $('totalSol');
+        const totalInsolEl = $('totalInsol');
+        const totalAllEl = $('totalAll');
+        const showDate = $('showDate');
+        const progressBar = $('progressBar');
+        const targetIn = $('target');
+
+        // populate foods
+        FOOD_DB.forEach(f => {
+            const opt = document.createElement('option'); opt.value = f.key; opt.textContent = f.name; foodSel.appendChild(opt);
+        });
+
+        // localStorage key
+        const LS_KEY = 'controlFibra_entries_v1';
+
+        // load date default
+        dateIn.value = todayISO();
+
+        // get entries (object: date -> array entries)
+        function loadAll() {
+            try { return JSON.parse(localStorage.getItem(LS_KEY)) || {}; } catch (e) { return {} }
+        }
+        function saveAll(obj) { localStorage.setItem(LS_KEY, JSON.stringify(obj)); }
+
+        function getEntriesFor(date) { const all = loadAll(); return all[date] || [] }
+        function setEntriesFor(date, arr) { const all = loadAll(); all[date] = arr; saveAll(all); }
+
+        function render() {
+            const date = dateIn.value; showDate.textContent = date;
+            const entries = getEntriesFor(date);
+            entriesTableBody.innerHTML = '';
+            let sumSol = 0, sumInsol = 0;
+            entries.forEach((e, idx) => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `<td>${e.name}</td><td>${e.grams}</td><td>${(e.soluble).toFixed(2)}</td><td>${(e.insoluble).toFixed(2)}</td><td><button data-idx='${idx}' class='del'>Eliminar</button></td>`;
+                entriesTableBody.appendChild(tr);
+                sumSol += e.soluble; sumInsol += e.insoluble;
+            });
+            totalSolEl.textContent = sumSol.toFixed(2) + ' g';
+            totalInsolEl.textContent = sumInsol.toFixed(2) + ' g';
+            const total = (sumSol + sumInsol);
+            totalAllEl.textContent = total.toFixed(2) + ' g';
+            const target = Number(targetIn.value) || 30;
+            const pct = Math.min(100, Math.round((total / target) * 100));
+            progressBar.style.width = pct + '%';
+
+            // attach delete
+            document.querySelectorAll('.del').forEach(btn => btn.addEventListener('click', (ev) => {
+                const i = Number(btn.dataset.idx); entries.splice(i, 1); setEntriesFor(date, entries); render();
+            }));
+        }
+
+        // compute fiber for grams
+        function computeFor(foodKey, grams) {
+            const f = FOOD_DB.find(x => x.key === foodKey);
+            if (!f) return { soluble: 0, insoluble: 0 };
+            const factor = grams / 100;
+            return { soluble: +(f.soluble * factor), insoluble: +(f.insoluble * factor) };
+        }
+
+        // add entry
+        document.getElementById('entryForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const foodKey = foodSel.value; const grams = Number(gramsIn.value) || 0; const date = dateIn.value;
+            if (!foodKey || grams <= 0) return alert('Selecciona alimento y gramos válidos.');
+            const food = FOOD_DB.find(x => x.key === foodKey);
+            const comp = computeFor(foodKey, grams);
+            const entry = { key: foodKey, name: food.name, grams, soluble: round2(comp.soluble), insoluble: round2(comp.insoluble) };
+            const arr = getEntriesFor(date); arr.push(entry); setEntriesFor(date, arr);
+            render();
+        });
+
+        // clear inputs
+        $('clearBtn').addEventListener('click', () => { gramsIn.value = 100; foodSel.selectedIndex = 0; });
+
+        // date change
+        dateIn.addEventListener('change', render);
+        targetIn.addEventListener('change', render);
+        // ++++++++++++++++++++++++Carlos1
+        foodSel.addEventListener('change', () => {
+            const food = FOOD_DB.find(x => x.key === foodSel.value);
+            if (food && food.defaultGrams) gramsIn.value = food.defaultGrams;
+        });
+        // export CSV
+        $('exportCSV').addEventListener('click', () => {
+            const date = dateIn.value; const entries = getEntriesFor(date);
+            if (entries.length === 0) return alert('No hay entradas para exportar.');
+            const header = ['Fecha', 'Alimento', 'Gramos', 'Fibra soluble (g)', 'Fibra insoluble (g)'];
+            const rows = entries.map(e => [date, e.name, e.grams, e.soluble, e.insoluble]);
+            const csv = [header, ...rows].map(r => r.map(c => `"${String(c).replace(/"/g, '""')}"`).join(',')).join('\n');
+            const blob = new Blob([csv], { type: 'text/csv' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a'); a.href = url; a.download = `fibra_${date}.csv`; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+        });
+
+        // clear day
+        $('clearDay').addEventListener('click', () => {
+            if (!confirm('Borrar todas las entradas del día seleccionado?')) return; const date = dateIn.value; setEntriesFor(date, []); render();
+        });
+
+        function round2(n) { return Math.round(n * 100) / 100; }
+
+        // initialize sample: if no data for today, add example (optional)
+        window.addEventListener('load', () => {
+            if (!localStorage.getItem(LS_KEY)) {
+                // leave empty by default
+            }
+            render();
+        });
+    </script>
+</body>
+
+</html>

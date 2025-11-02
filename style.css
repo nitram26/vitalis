@@ -53,9 +53,17 @@ body {
   margin-top: 1em;
   margin-left: 1em;
 }
+.nombre1 {
+  color: aliceblue;
+  margin-top: 1em;
+  margin-left: 1em;
+}
 
 .nombre:hover {
   color: yellow;
+}
+.nombre1:hover {
+  color: brown;
 }
 
 .img {
