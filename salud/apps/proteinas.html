@@ -192,6 +192,7 @@
     <header>
       <div>
         <h1>REGISTRO DE PROTEINAS</h1>
+        <h2>Rango 2511: 75-90 </h2>
       </div>
     </header>
 
@@ -257,6 +258,7 @@
                 <option value="lecheAvena">Leche Avena 300g(6g)</option>
                 <option value="lecheEntera">Leche Entera 300g(10g)</option>
                 <option value="panIntegral">Pan Integral 2=50g (5g)</option>
+                <option value="maiz">Maíz</option>
                 <option value="pistacho">Pistachos 18=25g(5g)</option>
                 <option value="pescado">Pescado (20g)</option>
                 <option value="pollo">Pollo 200g(60g)</option>
@@ -264,6 +266,7 @@
                 <option value="yogurGriego">Yogur Griego 200g(20g)</option>
                 <option value="yogurNatural">Yogur Natural 200g(10g)</option>
                 <option value="yuca">Yuca (2g)</option>
+                <option value="zanahoria">Zanahoria</option>
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="media-mañana" class="food-name" placeholder="Alimento personalizado"
@@ -288,14 +291,19 @@
                 <option value="atún">Atún [25g]</option>
                 <option value="beterraga">Beterraga</option>
                 <option value="carneRes">Carne Res (30g)</option>
+                <option value="cebolla">Cebolla</option>
+                <option value="coliflor">Coliflor</option>
                 <option value="espinaca">Espinacas (3g)</option>
+                 <option value="maiz">Maíz</option>
                 <option value="menestras">Fréjol 200g(18g)</option>
                 <option value="higadoRes">Hígado de Res</option>
                 <option value="huevo">Huevo</option>
                 <option value="lenteja">Lentejas Cocidas 200g(18g)</option>
+                 <option value="papa">Papas con piel</option>
                 <option value="pescado">Pescado (20g)</option>
                 <option value="pollo">Pollo (30g)</option>
                 <option value="yuca">Yuca (2g)</option>
+                <option value="zanahoria">Zanahoria</option>
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="almuerzo" class="food-name" placeholder="Alimento personalizado" style="display:none" />
@@ -329,6 +337,7 @@
                 <option value="yogurGriego">Yogur Griego 200g(20g)</option>
                 <option value="yogurNatural">Yogur Natural 200(10g)</option>
                 <option value="yuca">Yuca (2g)</option>
+                <option value="zanahoria">Zanahoria</option>
                 <option value="otro">Otro (escribir)</option>
               </select>
               <input data-meal="media-tarde" class="food-name" placeholder="Alimento personalizado"
@@ -385,7 +394,7 @@
             </div>
             <div style="text-align:right">
               <div class="small">Meta diaria</div>
-              <div id="metaProt" class="big">100 </div>
+              <div id="metaProt" class="big">75- 90 </div>
             </div>
           </div>
           <div class="progress" title="Progreso hacia la meta">
@@ -445,6 +454,8 @@
       avenaHojuela: 3, // por 25 g
       beterraga: 2, // por 100 g
       carneRes: 30, // por 100 g
+      cebolla: 2, // por 100 g
+      coliflor: 2, // por 100 g
       espinaca: 3, // por 100 g
       higadoRes: 22, // por 100 g
       huevo: 6, // por 3 huevos (~150 g)
@@ -453,7 +464,9 @@
       lecheAvena: 6, // por 300 ml
       lecheEntera: 10, // por 300 ml
       lenteja: 18, // por 200 g cocida
+      maiz:10, // por 100 g
       menestras: 18, // por 200 g cocida
+      papa: 2, // por 2 rebanadas (~50 g)
       panIntegral: 5, // por 2 rebanadas (~50 g)
       pescado: 20, // por 100 g
       pistacho: 5, // por 25 g
@@ -462,6 +475,7 @@
       yogurGriego: 20, // por 200 g
       yogurNatural: 10, // por 200 g
       yuca: 2, // por 100 g
+      zanahoria: 1, // por 100 g
     };
     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     function bindFoodSelects() {
