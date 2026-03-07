@@ -239,3 +239,9 @@ td {
   border-radius: 1em;
   margin-top: 1.5em;
 }
+  .aprobado{
+    color: blue;
+   }
+   .agresor{
+    color: red;
+   }

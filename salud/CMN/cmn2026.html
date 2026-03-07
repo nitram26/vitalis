@@ -31,6 +31,7 @@
         <ol>
           <li class="li"><a href="./cmn2024.html">2024 MEDIDAS</a></li>
           <li class="li"><a href="./cmn2025.html">2025 MEDIDAS</a></li>
+          <li class="li"><a href="./EvaluacionAlimentos.html">EVALUACIÓN DE ALIMENTOS</a></li>
         </ol>
           <ol>
             
@@ -226,27 +227,28 @@
       <tbody>
           
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+              <td>27</td> <!--Fecha   -->
+              <td>107</td> <!--Glucosa (mg/dL)  -->
+              <td>117</td> <!--Presión Sistólica (mmHg) -->
+              <td>67</td> <!--Presión Diastólica (mmHg)  -->
+              <td>61</td> <!-- Pulso (bpm)  -->
+              <td>36.3</td> <!-- Temperatura (°C)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>59</td> <!-- Peso (kg)  -->
+              <td class="warning">DESAYUNO DE 4 HUEVOS <br> Tomar signos dentro de 2.5 horas</td> <!--Observaciones  -->
           </tr>
           <tr>
-              <td></td> <!--Fecha   -->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Presión Sistólica (mmHg) -->
-              <td></td> <!--Presión Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+              <td>27</td> <!--Fecha   -->
+              <td>99</td> <!--Glucosa (mg/dL)  -->
+              <td>114</td> <!--Presión Sistólica (mmHg) -->
+              <td>64</td> <!--Presión Diastólica (mmHg)  -->
+              <td>60</td> <!-- Pulso (bpm)  -->
+              <td>36.3</td> <!-- Temperatura (°C)  -->
+              <td>97</td> <!--Oxigenación (%)  -->
+              <td>59</td> <!-- Peso (kg)  -->
+              <td class="warning">LOS HUEVOS NO AFECTAN LOS VALORES </td> <!--Observaciones  -->
           </tr>
+      
           <tr>
               <td></td> <!--Fecha   -->
               <td></td> <!--Glucosa (mg/dL)  -->
@@ -304,10 +306,10 @@
       const ctx2 = document.getElementById('MedicionesChart02').getContext('2d');//mediciones
   
       const data02 = {  //data
-        labels: ['06', ], // Fechas
+        labels: ['27','28' ], // Fechas
         datasets: [{
           label: 'Valores', //titulo
-          data: [89,], // Valores
+          data: [107,99], // Valores
           borderColor: '#8884d8',
           backgroundColor: 'rgba(136, 132, 216, 0.2)',
           tension: 0.3,
