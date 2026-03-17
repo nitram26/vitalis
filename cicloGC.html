@@ -40,6 +40,18 @@
 <br><br><br>
 </div>
 <script>
+    // 👉 CONFIGURE AQUÍ SU FECHA INICIAL FIJA
+const fechaInicioFija = "2026-03-16"; // <-- cambie esta fecha si desea
+
+window.onload = function() {
+    // Colocar fecha de inicio
+    document.getElementById("inicio").value = fechaInicioFija;
+
+    // Colocar fecha de hoy automáticamente
+    const hoy = new Date();
+    const hoyFormato = hoy.toISOString().split("T")[0];
+    document.getElementById("consulta").value = hoyFormato;
+};
 function calcular() {
     const inicio = new Date(document.getElementById("inicio").value);
     const consulta = new Date(document.getElementById("consulta").value);
