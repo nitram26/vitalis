@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="../style.css">
+<title>HORA GC</title>
+</head >
+<body class="body">
+      <p id="alInicio" class="principio"></p>
+    <header>
+      <div class="container">
+        <p class="logo"> FAMILIA </p>
+        <!-- ****************************************************** -->
+        <a href="#alInicio"><img src="../../media/CERVERA.png" alt="" class="logoC"></a>
+        <a href="./index.html" class="nombre">INICIO </a>
+      </div>
+    </header> <br><br>
+    <!-- ****************************************************************** -->
+    <h1 class="init">HORARIO</h1>
+     <h3 class="cita">"No aceptes como Verdad lo que no proviene del Amor, <br> ni aceptes como Amor lo que no proviene de la Verdad"
+          <br>EDITH STEIN</h3>
+
+
+    <!-- ****************************************************************** -->
+<div class="horagc">
+
+
+<h2>📅 TIEMPO DE GIANCARLO</h2>
+
+<p><b>Fecha inicio del ciclo 16-03-2026</b></p>
+<input type="date" id="inicio">
+
+<p><b>Fecha que desea consultar:</b></p>
+<input type="date" id="consulta">
+
+<br>
+<button onclick="calcular()">Consultar</button>
+
+<div class="resultado" id="resultado"></div>
+<br><br><br>
+</div>
+<script>
+function calcular() {
+    const inicio = new Date(document.getElementById("inicio").value);
+    const consulta = new Date(document.getElementById("consulta").value);
+
+    if (isNaN(inicio) || isNaN(consulta)) {
+        document.getElementById("resultado").innerHTML = "Ingrese ambas fechas.";
+        return;
+    }
+
+    const diferencia = Math.floor((consulta - inicio) / (1000 * 60 * 60 * 24));
+
+    // Día dentro del ciclo de 12 días
+    let dia = ((diferencia % 12) + 12) % 12;
+
+    let estado = "";
+
+    if (dia < 4) {
+        estado = "TRABAJA DE DÍA ☀️";
+    } else if (dia < 6) {
+        estado = "DESCANSO 😌";
+    } else if (dia < 10) {
+        estado = "TRABAJA DE NOCHE 🌙";
+    } else {
+        estado = "DESCANSO 😌";
+    }
+
+    // 🔍 Buscar próximo descanso
+    let diasParaDescanso = 0;
+
+    for (let i = 0; i < 12; i++) {
+        let futuro = (dia + i) % 12;
+
+        if (futuro >= 4 && futuro < 6 || futuro >= 10) {
+            diasParaDescanso = i;
+            break;
+        }
+    }
+
+    let fechaDescanso = new Date(consulta);
+    fechaDescanso.setDate(consulta.getDate() + diasParaDescanso);
+
+    let sugerencia = "";
+    if (estado.includes("DESCANSO")) {
+        sugerencia = "✅ Buen momento para llamarlo";
+    } else if (estado.includes("DÍA")) {
+        sugerencia = "⚠️ Probablemente está ocupado";
+    } else {
+        sugerencia = "🌙 Puede estar durmiendo, mejor llama a Karol";
+    }
+
+    document.getElementById("resultado").innerHTML =
+        `<b>Resultado:</b><br>${estado}<br>${sugerencia}<br><br>
+        <b>📅 Próximo descanso:</b><br>
+        En ${diasParaDescanso} día(s) → ${fechaDescanso.toLocaleDateString()}`;
+}
+   
+</script>
+
+</body>
+</html>
