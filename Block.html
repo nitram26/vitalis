@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<title>Lista de cortes</title>
+<style>
+    body { font-family: Arial; margin: 30px; }
+    input { margin: 5px; padding: 5px; }
+    button { padding: 8px 15px; margin-top: 10px; }
+    table { border-collapse: collapse; margin-top: 20px; width: 100%; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background-color: #f0f0f0; }
+</style>
 </head>
 <body>
-    
+
+<h2>🪑 Generador de lista de cortes</h2>
+
+<label>Largo (L):</label><input type="number" id="L"><br>
+<label>Ancho (A):</label><input type="number" id="A"><br>
+<label>Profundidad (P):</label><input type="number" id="P"><br>
+<label>Espesor (E):</label><input type="number" id="E"><br>
+<label>Columnas de cajones (CC):</label><input type="number" id="CC"><br>
+<label>Cajones por columna (CXC):</label><input type="number" id="CXC"><br>
+
+<br>
+<button onclick="generar()">Generar lista</button>
+
+<table id="tabla">
+    <thead>
+        <tr>
+            <th>Cantidad</th>
+            <th>Pieza</th>
+            <th>Largo</th>
+            <th>Ancho</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script>
+function generar() {
+
+    let CC = parseInt(document.getElementById("CC").value) || 0;
+    let CXC = parseInt(document.getElementById("CXC").value) || 0;
+
+    let totalCajones = CC * CXC;
+
+    let piezas = [
+        {cant: 2, nombre: "Lados del mueble"},
+        {cant: 1, nombre: "Tapa del mueble"},
+        {cant: 1, nombre: "Zócalo"},
+        {cant: 3, nombre: "Soportes"},
+        {cant: totalCajones * 2, nombre: "Lados de cajón"},
+        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón"},
+        {cant: totalCajones, nombre: "Fondo de cajón"}
+    ];
+
+    let tbody = document.querySelector("#tabla tbody");
+    tbody.innerHTML = "";
+
+    piezas.forEach(p => {
+        let fila = `
+        <tr>
+            <td>${p.cant}</td>
+            <td>${p.nombre}</td>
+            <td>-</td>
+            <td>-</td>
+            <td></td>
+        </tr>`;
+        tbody.innerHTML += fila;
+    });
+}
+</script>
+
 </body>
 </html>
