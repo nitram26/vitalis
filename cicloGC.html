@@ -63,6 +63,7 @@
 <div class="resultado" id="resultado"></div>
 <br><br><br>
 </div>
+<!-- //////////////////////////////////////////////////////// -->
 <script>
     //  CONFIGURAR AQUÍ SU FECHA INICIAL FIJA
 const fechaInicioFija = "2026-03-16"; // <-- cambie esta fecha si desea
@@ -115,7 +116,7 @@ function calcular() {
     }
 
     let fechaDescanso = new Date(consulta);
-    fechaDescanso.setDate(consulta.getDate() + diasParaDescanso);
+    fechaDescanso.setDate(consulta.getDate() + diasParaDescanso+1);
 
     let sugerencia = "";
     if (estado.includes("DESCANSO")) {

@@ -14,10 +14,10 @@
 </head>
 <body>
 
-<h2>🪑 Generador de lista de cortes</h2>
+<h2>🪑 Generador de lista de cortes en mm 1100 900 500</h2>
 
 <label>Largo (L):</label><input type="number" id="L"><br>
-<label>Ancho (A):</label><input type="number" id="A"><br>
+<label>Alto (A):</label><input type="number" id="A"><br>
 <label>Profundidad (P):</label><input type="number" id="P"><br>
 <label>Espesor (E):</label><input type="number" id="E"><br>
 <label>Columnas de cajones (CC):</label><input type="number" id="CC"><br>
@@ -33,7 +33,8 @@
             <th>Pieza</th>
             <th>Largo</th>
             <th>Ancho</th>
-            <th>Observaciones</th>
+            <th>CANTO: LARGO</th>
+            <th>CANTO: ANCHO</th>
         </tr>
     </thead>
     <tbody></tbody>
@@ -42,19 +43,25 @@
 <script>
 function generar() {
 
+    let L = parseFloat(document.getElementById("L").value) || 0;
+    let P = parseFloat(document.getElementById("P").value) || 0;
+    let E = parseFloat(document.getElementById("E").value) || 0;
     let CC = parseInt(document.getElementById("CC").value) || 0;
     let CXC = parseInt(document.getElementById("CXC").value) || 0;
 
     let totalCajones = CC * CXC;
 
     let piezas = [
-        {cant: 2, nombre: "Lados del mueble"},
-        {cant: 1, nombre: "Tapa del mueble"},
-        {cant: 1, nombre: "Zócalo"},
-        {cant: 3, nombre: "Soportes"},
-        {cant: totalCajones * 2, nombre: "Lados de cajón"},
-        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón"},
-        {cant: totalCajones, nombre: "Fondo de cajón"}
+        {cant: 2, nombre: "Lados del mueble", largo: L, ancho: P, CL: "2", CA: "2" },
+        
+        {cant: 1, nombre: "Zócalo", largo: L - (2 * E), ancho: 100, CL: "2", CA: "-" },
+
+        {cant: 1, nombre: "Tapa del mueble", largo: L, ancho: P, CL: "2", CA: "2" },
+        {cant: 3, nombre: "Soportes", largo: L*0.15, ancho: L-(2*E), CL: "-", CA: "-" },
+
+        {cant: totalCajones * 2, nombre: "Lados de cajón", largo: P-50, ancho: "15", CL: "2", CA: "-" },
+        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón", largo: 2*L-(6*E)-(25*CC), ancho: "15", CL: "2", CA: "-" },
+        {cant: totalCajones, nombre: "Tapa de cajón", largo:(L/CC)-6 , ancho:(A -100)*0.1* CXC  , CL:"2" , CA: "2" }
     ];
 
     let tbody = document.querySelector("#tabla tbody");
@@ -65,9 +72,10 @@ function generar() {
         <tr>
             <td>${p.cant}</td>
             <td>${p.nombre}</td>
-            <td>-</td>
-            <td>-</td>
-            <td></td>
+            <td>${p.largo}</td>
+            <td>${p.ancho}</td>
+            <td>${p.CL}</td>
+            <td>${p.CA}</td>
         </tr>`;
         tbody.innerHTML += fila;
     });
