@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../style.css">
+<title>CORTES MELAMINA</title>
+
+</head>
+<body>
+  <p id="alInicio" class="principio"></p>
+    <header>
+      <div class="container">
+        <p class="logo"> SALUD</p>
+        <!-- ****************************************************** -->
+        <a href="#alInicio"><img src="../media/CERVERA.png" alt="" class="logoC"></a>
+        <a href="../index.html" class="nombre">INICIO </a>
+      </div>
+    </header> <br><br><br>
+    <!-- ****************************************************************** -->
+<h2>🪑 LISTA DE CORTES en mm </h2>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <tr>
+    <th>PARÁMETRO</th>
+    <th>VALOR</th>
+  </tr>
+  <tr>
+    <td>Largo del mueble (L)</td>
+    <td><input type="number" id="L"></td>
+  </tr>
+  <tr>
+    <td>Alto del mueble (A)</td>
+    <td><input type="number" id="A"></td>
+  </tr>
+  <tr>
+    <td>Profundidad del mueble (P)</td>
+    <td><input type="number" id="P"></td>
+  </tr>
+  <tr>
+    <td>Espesor del material (E)</td>
+    <td><input type="number" id="E"></td>
+  </tr>
+  <tr>
+    <td>Columnas de cajones (CC)</td>
+    <td><input type="number" id="CC"></td>
+  </tr>
+  <tr>
+    <td>Cajones por columna (CXC)</td>
+    <td><input type="number" id="CXC"></td>
+  </tr>
+</table>
+
+<br>
+<button id="btnGenerar" onclick="generar()" disabled>Generar lista</button>
+
+<table id="tabla">
+    <thead>
+        <tr>
+            <th>Cantidad</th>
+            <th>Pieza</th>
+            <th>Largo</th>
+            <th>Ancho</th>
+            <th>CANTO: LARGO</th>
+            <th>CANTO: ANCHO</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<BR></BR>
+<script>
+    function validarCampos() {
+  const ids = ["L","A","P","E","CC","CXC"];
+  let completos = ids.every(id => {
+    let valor = document.getElementById(id).value;
+    return valor !== "" && !isNaN(valor);
+  });
+  document.getElementById("btnGenerar").disabled = !completos;
+}
+
+document.querySelectorAll("input[type=number]").forEach(input => {
+  input.addEventListener("input", validarCampos);
+});
+function generar() {
+
+    let L = parseFloat(document.getElementById("L").value) || 0;
+    let A = parseFloat(document.getElementById("A").value) || 0;
+    let P = parseFloat(document.getElementById("P").value) || 0;
+    let E = parseFloat(document.getElementById("E").value) || 0;
+    let CC = parseInt(document.getElementById("CC").value) || 0;
+    let CXC = parseInt(document.getElementById("CXC").value) || 0;
+
+    let totalCajones = CC * CXC;
+
+    let piezas = [
+        {cant: 2, nombre: "Lados del mueble", largo: A, ancho: P, CL: "2", CA: "2" },
+        
+        {cant: 1, nombre: "Zócalo", largo: L - (2 * E), ancho: 100, CL: "2", CA: "-" },
+
+        {cant: 1, nombre: "Tapa del mueble", largo: L, ancho: P, CL: "2", CA: "2" },
+        {cant: 3, nombre: "Soportes", largo:  L-(2*E), ancho: L/10, CL: "-", CA: "-" },
+
+        {cant: totalCajones * 2, nombre: "Lados de cajón", largo: P-50, ancho: "15", CL: "2", CA: "-" },
+        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón", largo:(L - ((CC + 1) * E + (25 * CC))) / CC, ancho: "15", CL: "2", CA: "-" },
+        // +++++++++++++++++++++++++++++++++++++++++++++
+        {cant: totalCajones, nombre: "Tapa de cajón", largo:(L/CC)-(CC * 4) , ancho:[( A-100) / CXC] - (CXC * 4) , CL:"2" , CA: "2" }
+    ];
+
+    let tbody = document.querySelector("#tabla tbody");
+    tbody.innerHTML = "";
+
+    piezas.forEach(p => {
+        let fila = `
+        <tr>
+            <td>${p.cant}</td>
+            <td>${p.nombre}</td>
+            <td>${p.largo}</td>
+            <td>${p.ancho}</td>
+            <td>${p.CL}</td>
+            <td>${p.CA}</td>
+        </tr>`;
+        tbody.innerHTML += fila;
+    });
+}
+</script>
+
+</body>
+</html>

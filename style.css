@@ -265,3 +265,38 @@ td {
      margin: 5%;
      width:95%;
     }
+
+     table {
+ 
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: green double 5px;
+  }
+  th {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+ button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
