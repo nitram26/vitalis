@@ -124,16 +124,15 @@ function generar() {
     let totalCajones = CC * CXC;
 
     let piezas = [
-        {cant: 2, nombre: "Lados del mueble", largo: A, ancho: P, CL: "2", CA: "2" },
+        {cant: 2, nombre: "Lados del mueble", largo: A, ancho: P, CL: "1", CA: "2" },
         
         {cant: 1, nombre: "Zócalo", largo: L - (2 * E), ancho: 100, CL: "2", CA: "-" },
 
         {cant: 1, nombre: "Tapa del mueble", largo: L, ancho: P, CL: "2", CA: "2" },
         {cant: 3, nombre: "Soportes", largo:  L-(2*E), ancho: L/10, CL: "-", CA: "-" },
 
-        {cant: totalCajones * 2, nombre: "Lados de cajón", largo: P-50, ancho: "15", CL: "2", CA: "-" },
-        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón", largo:(L - ((CC + 1) * E + (25 * CC))) / CC, ancho: "15", CL: "2", CA: "-" },
-        // +++++++++++++++++++++++++++++++++++++++++++++
+        {cant: totalCajones * 2, nombre: "Lados de cajón", largo: P-80, ancho: "15", CL: "2", CA: "-" },
+        {cant: totalCajones * 2, nombre: "Frente/trasera de cajón", largo:(L - ((CC + 1) * E + (25 * CC))) / CC, ancho: "15", CL: "2", CA: "2" },
         {cant: totalCajones, nombre: "Tapa de cajón", largo:(L/CC)-(CC * 4) , ancho:[( A-100) / CXC] - (CXC * 4) , CL:"2" , CA: "2" }
     ];
 
