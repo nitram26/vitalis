@@ -31,6 +31,12 @@
       margin-top: 15px;
       font-weight: bold;
     }
+
+    .import{
+        color: brown;
+        font-style: italic;
+       text-decoration: underline;
+    }
   </style>
 <title>HORA GC</title>
 </head >
@@ -54,7 +60,7 @@
 <p><b>Fecha inicio del ciclo Día </b></p>
 <input type="date" id="inicio">
 
-<p><b>Fecha que desea consultar:</b></p>
+<p class="import"><b>FECHA QUE DESEA CONSULTAR:</b></p>
 <input type="date" id="consulta">
 
 <br>
@@ -66,7 +72,7 @@
 <!-- //////////////////////////////////////////////////////// -->
 <script>
     //  CONFIGURAR AQUÍ SU FECHA INICIAL FIJA
-const fechaInicioFija = "2026-03-16"; // <-- cambie esta fecha si desea
+const fechaInicioFija = "2026-03-10"; // <-- cambie esta fecha si desea
 
 window.onload = function() {
     // Colocar fecha de inicio
