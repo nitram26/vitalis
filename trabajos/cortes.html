@@ -34,6 +34,12 @@ button {
     padding: 6px;
   }
 }
+
+.btt{
+  width: 30%;
+  background-color: brown;
+  color: white;
+}
 </style>
 <title>CORTES MELAMINA</title>
 
@@ -45,7 +51,7 @@ button {
         <p class="logo"> SALUD</p>
         <!-- ****************************************************** -->
         <a href="#alInicio"><img src="../media/CERVERA.png" alt="" class="logoC"></a>
-        <a href="../index.html" class="nombre">INICIO </a>
+        <a href="./index.html" class="nombre">INICIO </a>
       </div>
     </header> <br><br><br>
     <!-- ****************************************************************** -->
@@ -83,8 +89,8 @@ button {
 </table>
 
 <br>
-<button id="btnGenerar" onclick="generar()" disabled>Generar lista</button>
-
+<button class="btt" id="btnGenerar" onclick="generar()" disabled>GENERAR LISTA</button>
+<button class="btt" id="btnLimpiar" onclick="limpiar()" type="button">Limpiar</button>
 <table id="tabla">
     <thead>
         <tr>
@@ -112,6 +118,27 @@ button {
 document.querySelectorAll("input[type=number]").forEach(input => {
   input.addEventListener("input", validarCampos);
 });
+/////////////////////////////////////////////////////////
+
+function limpiar() {
+    const ids = ["L","A","P","E","CC","CXC"];
+    ids.forEach(id => {
+      document.getElementById(id).value = "";
+    });
+
+    // Limpia la tabla
+    document.querySelector("#tabla tbody").innerHTML = "";
+
+    // Vuelve a deshabilitar el botón generar
+    document.getElementById("btnGenerar").disabled = true;
+  }
+
+  document.querySelectorAll("input[type=number]").forEach(input => {
+    input.addEventListener("input", validarCampos);
+  });
+
+/////////////////////////////////////////////////////////
+
 function generar() {
 
     let L = parseFloat(document.getElementById("L").value) || 0;
