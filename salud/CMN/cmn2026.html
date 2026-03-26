@@ -134,80 +134,10 @@
             <td class="warning"></td> <!--Observaciones  -->
         </tr>
  
-        <tr class="s">
-             <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-            <td>70-100</td> <!--Glucosa (mg/dL)  -->
-            <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-            <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-            <td>50-60</td> <!-- Pulso (bpm)  -->
-            <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-            <td>95-100</td> <!--Oxigenación (%)  -->
-            <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-            <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-        </tr>
+     
     </tbody>
 </table> 
-<div class="graf">
-  <div class="card">
-      <h2 class="cita">Gráfica de Glucosa Enero</h2>
-    <canvas id="MedicionesChart01"></canvas>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script>
-    const ctx = document.getElementById('MedicionesChart01').getContext('2d');
-
-    const data01 = {
-      labels: ['11',29 ], // Añade más fechas aquí
-      datasets: [{
-        label: 'Valores', //titulo
-        data: [99,104], // Añade más valores aquí
-        borderColor: '#8884d8',
-        backgroundColor: 'rgba(136, 132, 216, 0.2)',
-        tension: 0.3,
-        fill: true,
-      }]
-    };
-
-    const options = {
-      responsive: true,
-      plugins: {
-        legend: {
-          display: true,
-          position: 'top',
-        },
-        tooltip: {
-          enabled: true,
-        },
-      },
-      scales: {
-        x: {
-          title: {
-            display: true,
-            text: 'Día de Enero',
-          },
-        },
-        y: {
-          title: {
-            display: true,
-            text: 'Glucosa (mg/dL)',
-          },
-          beginAtZero: false,
-          min:60, //limite inferior de la tabla
-        },
-      },
-    };
-
-    const ctx01 = document.getElementById('MedicionesChart01').getContext('2d');
-    new Chart(ctx01, {
-      type: 'line',
-      data: data01,
-      options: options,
-    });
-  </script>
-
-</div>
     </section>
   
     <!-- ************************************************************ -->
@@ -292,77 +222,11 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
    
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+        
       </tbody>
   </table> 
-  <div class="graf">
-    <div class="card">
-        <h2 class="cita">Gráfica de Glucosa Febrero</h2><!--mes  -->
-      <canvas id="MedicionesChart02"></canvas>     <!-- chart -->
-    </div>
   
-    <script>
-      const ctx2 = document.getElementById('MedicionesChart02').getContext('2d');//mediciones
   
-      const data02 = {  //data
-        labels: ['27','28' ], // Fechas
-        datasets: [{
-          label: 'Valores', //titulo
-          data: [107,99], // Valores
-          borderColor: '#8884d8',
-          backgroundColor: 'rgba(136, 132, 216, 0.2)',
-          tension: 0.3,
-          fill: true,
-        }]
-      };
-  
-      const options2 = {  //options
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-          },
-          tooltip: {
-            enabled: true,
-          },
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Día de Febrero', //mes
-            },
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Glucosa (mg/dL)',
-            },
-            beginAtZero: false,
-            min:60, //limite inferior de la tabla
-          },
-        },
-      };
-  
-      const ctx02 = document.getElementById('MedicionesChart02').getContext('2d'); //2 cambios
-      new Chart(ctx02, { //cambio
-        type: 'line',
-        data: data02, //cambio
-        options: options,
-      });
-    </script>
   
   </div>
       </section>
@@ -425,103 +289,34 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
           <tr>
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Pres Sistólica (mmHg) -->
-              <td></td> <!--Pres Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+               <td>25</td> <!--Fecha   -->
+              <td>09.15</td> <!--Hora-->
+              <td>98</td> <!--Glucosa (mg/dL)  -->
+              <td>115</td> <!--Pres Sistólica (mmHg) -->
+              <td>70</td> <!--Pres Diastólica (mmHg)  -->
+              <td>54</td> <!-- Pulso (bpm)  -->
+              <td>36.6</td> <!-- Temperatura (°C)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>60</td> <!-- Peso (kg)  -->
+              <td class="warning">yogurt, plátano,pan francés, queso crema </td> <!--Observaciones  -->
           </tr>
           <tr>
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td></td> <!--Glucosa (mg/dL)  -->
-              <td></td> <!--Pres Sistólica (mmHg) -->
-              <td></td> <!--Pres Diastólica (mmHg)  -->
-              <td></td> <!-- Pulso (bpm)  -->
-              <td></td> <!-- Temperatura (°C)  -->
-              <td></td> <!--Oxigenación (%)  -->
-              <td></td> <!-- Peso (kg)  -->
-              <td class="warning"></td> <!--Observaciones  -->
+               <td>26</td> <!--Fecha   -->
+              <td>12</td> <!--Hora-->
+              <td>103</td> <!--Glucosa (mg/dL)  -->
+              <td>111</td> <!--Pres Sistólica (mmHg) -->
+              <td>66</td> <!--Pres Diastólica (mmHg)  -->
+              <td>57</td> <!-- Pulso (bpm)  -->
+              <td>36.6</td> <!-- Temperatura (°C)  -->
+              <td>98</td> <!--Oxigenación (%)  -->
+              <td>60</td> <!-- Peso (kg)  -->
+              <td class="warning">No es significativa el alza de glucosa </td> <!--Observaciones  -->
           </tr>
    
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+     
       </tbody>
   </table> 
-  <div class="graf">
-    <div class="card">
-        <h2 class="cita">Gráfica de Glucosa Marzo</h2><!--mes  -->
-      <canvas id="MedicionesChart03"></canvas>     <!-- chart -->
-    </div>
-  
-    <script>
-      const ctx3 = document.getElementById('MedicionesChart03').getContext('2d');//2 cambios
-  
-      const data03 = {  //data
-        labels: ['19', 20], // Fechas
-        datasets: [{
-          label: 'Valores', //titulo
-          data: [ 96, 95], // Valores
-          borderColor: '#8884d8',
-          backgroundColor: 'rgba(136, 132, 216, 0.2)',
-          tension: 0.3,
-          fill: true,
-        }]
-      };
-  
-      const options3 = {  //options
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-          },
-          tooltip: {
-            enabled: true,
-          },
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Día de Marzo', //mes
-            },
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Glucosa (mg/dL)',
-            },
-            beginAtZero: false,
-            min:60, //limite inferior de la tabla
-          },
-        },
-      };
-  
-      const ctx03 = document.getElementById('MedicionesChart03').getContext('2d'); //2 cambios
-      new Chart(ctx03, { //cambio
-        type: 'line',
-        data: data03, //cambio
-        options: options,
-      });
-    </script>
-  
-  </div>
+
       </section>
     
       <!-- ****************************************************************** -->
@@ -605,79 +400,10 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
    
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+ 
       </tbody>
   </table> 
-  <div class="graf">
-    <div class="card">
-        <h2 class="cita">Gráfica de Glucosa Abril</h2><!--mes  -->
-      <canvas id="MedicionesChart04"></canvas>     <!-- chart -->
-    </div>
-  
-    <script>
-      const ctx4 = document.getElementById('MedicionesChart04').getContext('2d');// 2 cambios
-  
-      const data04 = {  //data
-        labels: ['07',], // Fechas
-        datasets: [{
-          label: 'Valores', //titulo
-          data: [109, ], // Valores
-          borderColor: '#8884d8',
-          backgroundColor: 'rgba(136, 132, 216, 0.2)',
-          tension: 0.3,
-          fill: true,
-        }]
-      };
-  
-      const options4 = {  //options
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-          },
-          tooltip: {
-            enabled: true,
-          },
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Día de Abril', //mes
-            },
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Glucosa (mg/dL)',
-            },
-            beginAtZero: false,
-            min:65, //limite inferior de la tabla
-          },
-        },
-      };
-  
-      const ctx04 = document.getElementById('MedicionesChart04').getContext('2d'); //2 cambios
-      new Chart(ctx04, { //cambio
-        type: 'line',
-        data: data04, //cambio
-        options: options,
-      });
-    </script>
-  
-  </div>
+
       </section>
     
       <!-- ****************************************************************** -->
@@ -761,79 +487,9 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
    
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
       </tbody>
   </table> 
-  <div class="graf">
-    <div class="card">
-        <h2 class="cita">Gráfica de Glucosa Mayo</h2><!--mes  -->
-      <canvas id="MedicionesChart05"></canvas>     <!-- chart -->
-    </div>
-  
-    <script>
-      const ctx5 = document.getElementById('MedicionesChart05').getContext('2d');// 2 cambios
-  
-      const data05 = {  //data
-        labels: ['07',], // Fechas
-        datasets: [{
-          label: 'Valores', //titulo
-          data: [109, ], // Valores
-          borderColor: '#8884d8',
-          backgroundColor: 'rgba(136, 132, 216, 0.2)',
-          tension: 0.3,
-          fill: true,
-        }]
-      };
-  
-      const options5 = {  //options
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-          },
-          tooltip: {
-            enabled: true,
-          },
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Día de Mayo', //mes
-            },
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Glucosa (mg/dL)',
-            },
-            beginAtZero: false,
-            min:65, //limite inferior de la tabla
-          },
-        },
-      };
-  
-      const ctx05 = document.getElementById('MedicionesChart05').getContext('2d'); //2 cambios
-      new Chart(ctx05, { //cambio
-        type: 'line',
-        data: data05, //cambio
-        options: options,
-      });
-    </script>
-  
-  </div>
+
       </section>
     
       <!-- ****************************************************************** -->
@@ -917,79 +573,9 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
    
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) IMC = Peso (kg) / (Estatura (m) * Estatura (m))-->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
       </tbody>
   </table> 
-  <div class="graf">
-    <div class="card">
-        <h2 class="cita">Gráfica de Glucosa Junio</h2><!--mes  -->
-      <canvas id="MedicionesChart06"></canvas>     <!-- chart -->
-    </div>
-  
-    <script>
-      const ctx6 = document.getElementById('MedicionesChart06').getContext('2d');// 2 cambios
-  
-      const data06 = {  //data
-        labels: ['07',], // Fechas
-        datasets: [{
-          label: 'Valores', //titulo
-          data: [109, ], // Valores
-          borderColor: '#8884d8',
-          backgroundColor: 'rgba(136, 132, 216, 0.2)',
-          tension: 0.3,
-          fill: true,
-        }]
-      };
-  
-      const options6 = {  //options
-        responsive: true,
-        plugins: {
-          legend: {
-            display: true,
-            position: 'top',
-          },
-          tooltip: {
-            enabled: true,
-          },
-        },
-        scales: {
-          x: {
-            title: {
-              display: true,
-              text: 'Día de Junio', //mes
-            },
-          },
-          y: {
-            title: {
-              display: true,
-              text: 'Glucosa (mg/dL)',
-            },
-            beginAtZero: false,
-            min:65, //limite inferior de la tabla
-          },
-        },
-      };
-  
-      const ctx06 = document.getElementById('MedicionesChart06').getContext('2d'); //2 cambios
-      new Chart(ctx06, { //cambio
-        type: 'line',
-        data: data06, //cambio
-        options: options,
-      });
-    </script>
-  
-  </div>
+
       </section>
     
       <!-- ****************************************************************** -->
@@ -1075,94 +661,11 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+     
           </tbody>
         </table>
-          <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Julio </h2>
-                <!-- // cambiar nombre del mes -->
-              <canvas id="MedicionesChart07"></canvas>
-              <!-- cambiar numero del mes -->
-            </div>
-          
-            <script>
-              const ctxJulio = document.getElementById
-              //cambiar nombre del mes
-              ('MedicionesChart07').getContext('2d');
-              // cambiar número del mes
-           
-          
-              const data07 = {
-                // cambiar numero del mes
-                labels: ['20', ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [89, ], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options07 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Julio',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx07 = document.getElementById('MedicionesChart07').getContext('2d');
-              new Chart(ctx07, {
-                // cambiar numero del mes en ctx y chart
-                type: 'line',
-                data: data07,
-                options: options07,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>   
-      
-      </tbody>
-  </table>
+ 
+ 
   
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
@@ -1248,94 +751,10 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+    
           </tbody>
         </table>
-          <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Agosto </h2>
-                <!-- // cambiar nombre del mes -->
-              <canvas id="MedicionesChart08"></canvas>
-              <!-- cambiar numero del mes -->
-            </div>
-          
-              <script>
-              const ctxAgosto = document.getElementById
-              //cambiar nombre del mes
-              ('MedicionesChart08').getContext('2d');
-              // cambiar número del mes
-           
-          
-              const data08 = {
-                // cambiar numero del mes
-                labels: ['27', ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [95, ], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options08 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Agosto',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx08 = document.getElementById('MedicionesChart08').getContext('2d');
-              new Chart(ctx08, {
-                // cambiar numero del mes en ctx y chart
-                type: 'line',
-                data: data08,
-                options: options08,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>   
-      
-      </tbody>
-  </table>
+  
   
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
@@ -1421,94 +840,10 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+
           </tbody>
         </table>
-          <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Septiembre </h2>
-                <!-- // cambiar nombre del mes 1-->
-              <canvas id="MedicionesChart09"></canvas>
-              <!-- cambiar numero del mes 1-->
-            </div>
-          
-            <script>
-              const ctxSeptiembre = document.getElementById
-              //cambiar nombre del mes 1
-              ('MedicionesChart09').getContext('2d');
-              // cambiar número del mes 1
-           
-          
-              const data09 = {
-                // cambiar numero del mes 1
-                labels: ['04', ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [86, ], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options09 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Septiembre',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx09 = document.getElementById('MedicionesChart09').getContext('2d');
-              new Chart(ctx09, {
-                // cambiar numero del mes en ctx y chart
-                type: 'line',
-                data: data09,
-                options: options09,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>   
-      
-      </tbody>
-  </table>
+ 
   
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
@@ -1594,91 +929,10 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
+      
           </tbody>
         </table>
-          <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Octubre </h2>
-                <!-- // cambiar nombre del mes 1-->
-              <canvas id="MedicionesChart10"></canvas>
-              <!-- cambiar numero del mes 1-->
-            </div>
-          
-            <script>
-              const ctxOctubre = document.getElementById
-              //cambiar nombre del mes 1
-              ('MedicionesChart10').getContext('2d');
-              // cambiar número del mes 1
-           
-          
-              const data10 = {
-                // cambiar numero del mes 1
-                labels: ['19',  ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [100, ], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options10 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Octubre',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx10 = document.getElementById('MedicionesChart10').getContext('2d');
-              new Chart(ctx10, {
-                // cambiar numero del mes en ctx y chart
-                type: 'line',
-                data: data10,
-                options: options10,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>     
+    
  
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
@@ -1764,92 +1018,9 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
           </tbody>
         </table>
-           <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Noviembre </h2>
-                <!-- // cambiar nombre del mes 1-->
-              <canvas id="MedicionesChart11"></canvas>
-              <!-- cambiar numero del mes 1-->
-            </div>
-          
-            <script>
-              const ctxNoviembre = document.getElementById
-              //cambiar nombre del mes 
-              ('MedicionesChart11').getContext('2d');
-              // cambiar número del mes 1
-           
-          
-              const data11 = {
-                // cambiar numero del mes 1
-                labels: ['19',  ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [100, ], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options11 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Noviembre',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx11 = document.getElementById('MedicionesChart11').getContext('2d');
-              new Chart(ctx11, {
-                // cambiar numero del mes en ctx 2 veces y chart
-                type: 'line',
-                data: data11,
-                options: options11,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>    
-  </table>
+
   
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
@@ -1935,94 +1106,9 @@
               <td class="warning"></td> <!--Observaciones  -->
           </tr>
 
-       
-          <tr class="s">
-               <td></td> <!--Fecha   -->
-              <td></td> <!--Hora-->
-              <td>70-100/120</td> <!--Glucosa (mg/dL)  -->
-              <td>Máx 120/140</td> <!--Pres Sistólica (mmHg) -->
-              <td>Min 80/90</td> <!--Pres Diastólica (mmHg)  -->
-              <td>50-60</td> <!-- Pulso (bpm)  -->
-              <td>36.1-37.2</td> <!-- Temperatura (°C)  -->
-              <td>95-100</td> <!--Oxigenación (%)  -->
-              <td>18.5-24.9 IMC</td> <!-- Peso (kg) EL INDICE DE MASA CORPORAL = PESO/ALTURA -->
-              <td>MEDIDAS ÓPTIMAS</td> <!--Observaciones  -->
-          </tr>
           </tbody>
         </table>
-              <div class="graf">
-            <div class="card">
-                <h2 class="cita">Gráfica de Glucosa Diciembre </h2>
-                <!-- // cambiar nombre del mes 1-->
-              <canvas id="MedicionesChart12"></canvas>
-              <!-- cambiar numero del mes 1-->
-            </div>
-          
-            <script>
-              const ctxDiciembre = document.getElementById
-              //cambiar nombre del mes 1
-              ('MedicionesChart10').getContext('2d');
-              // cambiar número del mes 1
-           
-          
-              const data12 = {
-                // cambiar numero del mes 1
-                labels: ['19', ], // Añade más fechas aquí
-                datasets: [{
-                  label: 'Mediciones',
-                  data: [100,], // Añade más valores aquí
-                  borderColor: '#8884d8',
-                  backgroundColor: 'rgba(136, 132, 216, 0.2)',
-                  tension: 0.3,
-                  fill: true,
-                }]
-              };
-          
-              const options12 = {
-                // cambiar numero del mes
-                responsive: true,
-                plugins: {
-                  legend: {
-                    display: true,
-                    position: 'top',
-                  },
-                  tooltip: {
-                    enabled: true,
-                  },
-                },
-                scales: {
-                  x: {
-                    title: {
-                      display: true,
-                      text: 'Día  de  Diciembre',
-                      // cambiar numero del mes
-                    },
-                  },
-                  y: {
-                    title: {
-                      display: true,
-                      text: 'Glucosa (mg/dL)',
-                    },
-                    beginAtZero: false,
-                    min:60,
-                  },
-                },
-              };
-          
-              const ctx12 = document.getElementById('MedicionesChart12').getContext('2d');
-              new Chart(ctx12, {
-                // cambiar numero del mes en ctx y chart
-                type: 'line',
-                data: data12,
-                options: options12,
-                // cambiar numero del mes en data y options
-              });
-            </script>
-          
-          </div>     
-      
-  
-  
+
       </section>
     <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++ -->  
 
